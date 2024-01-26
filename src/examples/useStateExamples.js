@@ -1,8 +1,5 @@
 /**
- *
  * useState est un Hook dans React qui vous permet d'ajouter un état local à vos composants fonctionnels.
- * Avant l'introduction des Hooks dans React 16.8, la gestion de l'état était principalement possible dans les composants de classe.
- * useState a rendu cette fonctionnalité accessible également dans les composants fonctionnels, améliorant ainsi leur expressivité et leur puissance.
  * Voici quelques points clés pour comprendre useState :
  *
  * Ajout d'État Local :
@@ -44,10 +41,11 @@
  * développement d'applications interactives.
  */
 import React, {useState} from "react";
+import Button from 'react-bootstrap/Button';
 
 // Nous allons créer une fonction qui va incrémenter un compteur à chaque clique sur un bouton
-// cette dernierre utilisera le Hook useState
-function IncrementButton() {
+// cette dernière utilisera le Hook useState
+function UseStateExamples() {
     // ici, count est la variable d'état et setCount est la fonction de mise à jour de l'état
     // useState(0) initialise count à 0
     const [count, setCount] = useState(0);
@@ -62,7 +60,6 @@ function IncrementButton() {
         // Cela reviendrait à faire setCount(0 + 1) deux fois, ce qui donnerait finalement 1, et non 2.
     }
 
-
     function IncrementCountWithPrevCount() {
         // 'prevCount' est la valeur actuelle de 'count' au moment où cette mise à jour est appliquée.
         // Étant donné que count est initialisé à 0, prevCount aura la valeur 0 lors de la première incrémentation.
@@ -75,6 +72,9 @@ function IncrementButton() {
         // et renvoie une nouvelle valeur pour l'état.
         // Si on refait setCount(prevCount => prevCount + 1) une deuxième fois consécutive, on obtiendra bien un incrément de 2,
         // car chaque appel utilise la valeur la plus récente de count mise à jour par l'appel précédent contrairement à l'écriture directe.
+
+        // À noter que, bien que nous utilisions ici l'incrément d'un compteur, cette approche peut être appliquée à d'autres types de données.
+        // Par exemple, pour un booléen, nous pourrions faire : setBoolean(prevBool => !prevBool); pour basculer sa valeur au clique.
     }
 
     function IncrementButtonGoFurtherIntoLogic() {
@@ -111,13 +111,16 @@ function IncrementButton() {
 
     return (
         <>
-            <button onClick={incrementCountDirectWay}>
-                Incrémenter le compteur
-            </button>
+            {/*Changez le nom de la fonction appelée dans le onClick pour tester les différentes méthodes*/}
+            <Button variant="primary"
+                    onClick={incrementCountDirectWay}
+            >
+                Incrémenter le compteur et tester le useState
+            </Button>
             <p>Compteur : {count}</p>
         </>
     );
 }
 
-export default IncrementButton;
+export default UseStateExamples;
 
