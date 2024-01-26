@@ -15,7 +15,8 @@ Pour installer Git, rendez-vous sur le site officiel : https://git-scm.com/downl
 ###  Pour lancer l'application :
 
 ### Clonez le dépôt :
-`git git@github.com:BenjaminG95/React-Sandbox.git`
+Dans votre terminal, placé à l'endroit où vous stockez vos projets ( souvent www ou repos ) tapez la commande :
+`git clone git@github.com:BenjaminG95/React-Sandbox.git`
 
 ### Installez les dépendances :
 Dans votre terminal, placé dans le projet, tapez la commande : `npm i`
