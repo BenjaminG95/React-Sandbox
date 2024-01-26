@@ -41,7 +41,6 @@
  * développement d'applications interactives.
  */
 import React, {useState} from "react";
-import Button from 'react-bootstrap/Button';
 
 // Nous allons créer une fonction qui va incrémenter un compteur à chaque clique sur un bouton
 // cette dernière utilisera le Hook useState
@@ -112,11 +111,11 @@ function UseStateExamples() {
     return (
         <>
             {/*Changez le nom de la fonction appelée dans le onClick pour tester les différentes méthodes*/}
-            <Button variant="primary"
+            <button className='btn btn-primary'
                     onClick={incrementCountDirectWay}
             >
                 Incrémenter le compteur et tester le useState
-            </Button>
+            </button>
             <p>Compteur : {count}</p>
         </>
     );
