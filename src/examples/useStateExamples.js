@@ -77,48 +77,50 @@ function UseStateExamples() {
     }
 
     function IncrementButtonGoFurtherIntoLogic() {
-            // Première incrémentation : Ajoute 1 à 'count' directement.
-            // Cette méthode est simple et efficace si l'état actuel n'est pas critique.
-            setCount(count + 1);
+        // Première incrémentation : Ajoute 1 à 'count' directement.
+        // Cette méthode est simple et efficace si l'état actuel n'est pas critique.
+        setCount(count + 1);
 
-            // Deuxième incrémentation : Utilise une fonction pour ajouter 1 à 'count'.
-            // 'prevCount' est la valeur actuelle de 'count' lors de l'exécution de cette mise à jour.
-            // Cette méthode garantit que l'incrémentation utilise la valeur la plus récente de 'count'.
-            setCount(prevCount => prevCount + 1);
-            // 'prevCount' à donc en ce moment la valeur 2.
+        // Deuxième incrémentation : Utilise une fonction pour ajouter 1 à 'count'.
+        // 'prevCount' est la valeur actuelle de 'count' lors de l'exécution de cette mise à jour.
+        // Cette méthode garantit que l'incrémentation utilise la valeur la plus récente de 'count'.
+        setCount(prevCount => prevCount + 1);
+        // 'prevCount' à donc en ce moment la valeur 2.
 
-            // Troisième incrémentation : Ajoute 2 directement à 'count'.
-            // Cependant, 'count' n'a pas encore été mis à jour par les appels précédents à ce stade.
-            // Les mises à jour d'état sont asynchrones, donc 'count' n'est pas mis à jour immédiatement.
-            // Donc, cette incrémentation est basée sur la valeur initiale de 'count', soit 0.
-            setCount(count + 3);
-            // si nous arrêtions le code ici, 'count' aurait la valeur 3, une itération de 2 serait donc effectué à chaque clique sur le bouton
+        // Troisième incrémentation : Ajoute 2 directement à 'count'.
+        // Cependant, 'count' n'a pas encore été mis à jour par les appels précédents à ce stade.
+        // Les mises à jour d'état sont asynchrones, donc 'count' n'est pas mis à jour immédiatement.
+        // Donc, cette incrémentation est basée sur la valeur initiale de 'count', soit 0.
+        setCount(count + 3);
+        // si nous arrêtions le code ici, 'count' aurait la valeur 3, une itération de 2 serait donc effectué à chaque clique sur le bouton
 
-            // Quatrième incrémentation : Utilise une fonction pour ajouter 2 à 'count'.
-            // Encore une fois, 'prevCount' représente la valeur actuelle de 'count' lors de cette mise à jour, soit 3.
-            // Cela assure que l'incrémentation prend en compte les mises à jour précédentes.
-            // De plus, on logg la valeur de 'prevCount' pour suivre les changements.
-            setCount(prevCount => {
-                console.log(prevCount); // Affiche la valeur actuelle de 'prevCount' (sera 3 ici).
-                return prevCount + 2;   // Incrémente 'prevCount' de 2, résultant en un total de 5.
-            });
-            // En fin de compte, ces appels incrémentent 'count' de 5 au total.
-            // Mais l'ordre et le moment exacts des mises à jour peuvent varier en fonction de la gestion par React.
+        // Quatrième incrémentation : Utilise une fonction pour ajouter 2 à 'count'.
+        // Encore une fois, 'prevCount' représente la valeur actuelle de 'count' lors de cette mise à jour, soit 3.
+        // Cela assure que l'incrémentation prend en compte les mises à jour précédentes.
+        // De plus, on logg la valeur de 'prevCount' pour suivre les changements.
+        setCount(prevCount => {
+            console.log(prevCount); // Affiche la valeur actuelle de 'prevCount' (sera 3 ici).
+            return prevCount + 2;   // Incrémente 'prevCount' de 2, résultant en un total de 5.
+        });
+        // En fin de compte, ces appels incrémentent 'count' de 5 au total.
+        // Mais l'ordre et le moment exacts des mises à jour peuvent varier en fonction de la gestion par React.
 
-            // Loggez count et prevCount sur les différentes incrémentations pour voir les changements
+        // Loggez count et prevCount sur les différentes incrémentations pour voir les changements
     }
 
-    return (
-        <>
-            {/*Changez le nom de la fonction appelée dans le onClick pour tester les différentes méthodes*/}
+    return (<>
+        {/*Changez le nom de la fonction appelée dans le onClick pour tester les différentes méthodes*/}
+        <div className="flex-column">
             <button className='btn btn-primary'
                     onClick={incrementCountDirectWay}
             >
                 Incrémenter le compteur et tester le useState
             </button>
-            <p>Compteur : {count}</p>
-        </>
-    );
+            <p className="text-small">Chaque clique incrémente le compteur</p>
+            <p className="text-small">Compteur : {count}</p>
+        </div>
+
+    </>);
 }
 
 export default UseStateExamples;
