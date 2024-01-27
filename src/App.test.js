@@ -6,7 +6,7 @@ import UseStateExample from './examples/useStateExample'; // Importe le composan
 import UseRefExample from './examples/UseRefExample'; // Importe le composant UseRefExample
 import UseEffectExample from './examples/UseEffectExample'; // Importe le composant UseEffectExample
 import UseCallbackExample from "./examples/useCallbackExample"; // Importe le composant UseCallbackExample
-import PropsExample from "./examples/propsExample";
+import PropsExample from "./examples/propsExample"; // Importe le composant PropsExample
 import MemoExample from "./examples/useMemoExample"; // Importe le composant PropsExample
 
 // Tests pour le composant UseStateExample
