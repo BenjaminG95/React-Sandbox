@@ -65,7 +65,8 @@ function MessageDisplay({ message, updateMessage }): JSX.Element {
                href={'https://github.com/BenjaminG95/React-Sandbox/blob/main/src/examples/propsExample.js'}
                target={"_blank"} rel="noreferrer">Code source de propsExample</a>
             <p className={'text-small'}> Remplissez l'input et appuyez sur le bouton pour modifier le texte.</p>
-            <input type="text" value={newMessage} onChange={handleInputChange} />
+            <input type="text" className={'text-small mt-2'} value={newMessage} onChange={handleInputChange} />
+
             <p className={'text-small'}>Message: {message}</p>
         </div>
     );
