@@ -14,8 +14,9 @@
 }
 
 .btn {
-  padding: .5em;
+  padding: .7em;
   border-radius: 1em;
+  font-size: .6em;
 }
 
 .btn-primary {
@@ -23,9 +24,17 @@
   color: #fff;
 }
 
+.btn-primary:hover{
+  background-color: #0069d9;
+}
+
 .btn-secondary{
   background-color: #c63df1;
   color: #fff;
+}
+
+.btn-secondary:hover{
+  background-color: #a63bc6;
 }
 
 .text-small{
