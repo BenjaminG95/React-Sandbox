@@ -68,7 +68,8 @@ function UseRefExample() {
                 Focus sur l'input et tester le useRef
             </button>
             <p className={'text-small'}>
-                Cliquez sur le bouton pour mettre le focus sur le champ de texte et ajouter la value "Hello World".
+                Cliquez sur le bouton pour mettre le focus sur
+                <br/>le champ de texte et ajouter la value "Hello World".
             </p>
             <input ref={inputRef} className={'text-small'} type="text"/>
         </div>
