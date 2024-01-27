@@ -77,7 +77,7 @@ function CustomHookExample(): JSX.Element {
 
     return (
         <div className="flex-column flex-item">
-            <h2>Custom Hook: useCounter( )</h2>
+            <h2>Custom Hook</h2>
             <div>
                 <button className={'btn btn-success'} onClick={increment}>
                     Incrémenter
