@@ -1,8 +1,13 @@
 :root {
     --primary-color: #007bff;
+    --primary-hover-color: #0069d9;
     --secondary-color: #c63df1;
+    --secondary-hover-color: #9c2dbd;
     --danger-color: #dc3545;
+    --danger-hover-color: #a71d2a;
     --success-color: #28a745;
+    --success-hover-color: #236e35;
+    --teal-color: #61DAFB;
     --text-small-size: 0.8em;
     --btn-font-size: 1em;
     --btn-padding: 0.7em;
@@ -62,7 +67,7 @@
 }
 
 .btn-primary:hover {
-    background-color: #1e62ab;
+    background-color: var(--primary-hover-color);
 }
 
 .btn-secondary {
@@ -70,7 +75,7 @@
 }
 
 .btn-secondary:hover {
-    background-color: #7d3194;
+    background-color: var(--secondary-hover-color);
 }
 
 .btn-danger {
@@ -78,7 +83,7 @@
 }
 
 .btn-danger:hover {
-    background-color: #8f232f;
+    background-color: var(--danger-hover-color);
 }
 
 .btn-success {
@@ -86,11 +91,11 @@
 }
 
 .btn-success:hover {
-    background-color: #236e35;
+    background-color: var(--success-hover-color);
 }
 
 .color-teal {
-    color: #61DAFB;
+    color: var(--teal-color);
 }
 
 .text-small {
@@ -151,9 +156,9 @@
     }
 }
 
-    @media (min-width: 1200px) and (max-width: 1599px) {
-        .flex-item {
-            flex-basis: 100%;
-            max-width: 45%;
-        }
+@media (min-width: 1200px) and (max-width: 1599px) {
+    .flex-item {
+        flex-basis: 100%;
+        max-width: 45%;
+    }
 }
