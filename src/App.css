@@ -1,87 +1,93 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App {
-  text-align: center;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-logo {
-  height: 30vmin;
-  pointer-events: none;
+    height: 30vmin;
+    pointer-events: none;
+    animation: App-logo-spin infinite 20s linear;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
-
 .btn {
-  padding: .7em;
-  border-radius: 1em;
-  font-size: .6em;
+    padding: 0.7em;
+    border-radius: 1em;
+    font-size: 0.6em;
+    color: #fff;
+    transition: background-color 0.3s ease;
 }
 
 .btn-primary {
-  background-color: #007bff;
-  color: #fff;
+    background-color: #007bff;
 }
 
-.btn-primary:hover{
-  background-color: #0069d9;
+.btn-primary:hover {
+    background-color: #0069d9;
 }
 
-.btn-secondary{
-  background-color: #c63df1;
-  color: #fff;
+.btn-secondary {
+    background-color: #c63df1;
 }
 
-.btn-secondary:hover{
-  background-color: #a63bc6;
+.btn-secondary:hover {
+    background-color: #a63bc6;
 }
 
-.text-small{
-  font-size: .5em;
+.btn-danger {
+    background-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+.text-small {
+    font-size: 0.5em;
 }
 
 .flex-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .flex-column {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.flex-evenly{
-  justify-content: space-evenly;
+.flex-evenly {
+    justify-content: space-evenly;
 }
 
-.w-100{
-  width: 100%;
+.w-100 {
+    width: 100%;
 }
