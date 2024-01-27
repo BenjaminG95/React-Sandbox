@@ -7,6 +7,8 @@
     --danger-hover-color: #a71d2a;
     --success-color: #28a745;
     --success-hover-color: #236e35;
+    --alert-color: #ffc107;
+    --alert-hover-color: #d39e00;
     --teal-color: #61DAFB;
     --text-small-size: 0.8em;
     --btn-font-size: 1em;
@@ -94,6 +96,14 @@
     background-color: var(--success-hover-color);
 }
 
+.btn-alert {
+    background-color: var(--alert-color);
+}
+
+.btn-alert:hover {
+    background-color: var(--alert-hover-color);
+}
+
 .color-teal {
     color: var(--teal-color);
 }
@@ -128,6 +138,10 @@
     margin-top: 1em;
 }
 
+.my-2 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
 
 .flex-item {
     flex-basis: 100%;
@@ -160,6 +174,6 @@
 @media (min-width: 1600px) {
     .flex-item {
         flex-basis: 100%;
-        max-width: 20%;
+        max-width: 25%;
     }
 }
