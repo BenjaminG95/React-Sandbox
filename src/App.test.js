@@ -6,6 +6,7 @@ import UseStateExample from './examples/useStateExample'; // Importe le composan
 import UseRefExample from './examples/UseRefExample'; // Importe le composant UseRefExample
 import UseEffectExample from './examples/UseEffectExample'; // Importe le composant UseEffectExample
 import UseCallbackExample from "./examples/useCallbackExample"; // Importe le composant UseCallbackExample
+import PropsExample from "./examples/propsExample"; // Importe le composant PropsExample
 
 // Tests pour le composant UseStateExample
 describe('UseStateExamples Component', () => {
@@ -66,5 +67,24 @@ describe('UseCallbackExample Component', () => {
         fireEvent.click(button); // Simule le clic sur le bouton du composant enfant
         const incrementedCounterText = screen.getByText(/Compteur actuel : 1/i); // Vérifie si le texte "Compteur actuel : 1" est présent dans le document après le clic
         expect(incrementedCounterText).toBeInTheDocument(); // Vérifie si le texte "Compteur actuel : 1" est présent dans le document après le clic
+    });
+});
+
+// Tests pour le composant PropsExample
+describe('PropsExample Component', () => {
+    test('affiche le message initial', () => {
+        render(<PropsExample />); // Rend le composant
+        expect(screen.getByText(/Message initial/i)).toBeInTheDocument(); // Vérifie si le texte "Message initial" est présent dans le document
+    });
+
+    test('met à jour le message lorsque le nouveau message est soumis', () => {
+        render(<PropsExample />); // Rend le composant
+        const input = screen.getByRole('textbox'); // Récupère l'input du composant
+        const button = screen.getByRole('button', { name: /Utiliser les props/i }); // Récupère le bouton du composant
+
+        fireEvent.change(input, { target: { value: 'Nouveau message' } }); // Simule la saisie du texte "Nouveau message" dans l'input
+        fireEvent.click(button); // Simule le clic sur le bouton
+
+        expect(screen.getByText(/Nouveau message/i)).toBeInTheDocument(); // Vérifie si le texte "Nouveau message" est présent dans le document
     });
 });

@@ -5,6 +5,7 @@ import UseStateExample from './examples/useStateExample';
 import UseEffectExample from "./examples/useEffectExample";
 import UseRefExample from "./examples/useRefExample";
 import UseCallbackExample from "./examples/useCallbackExample";
+import PropsExample from "./examples/propsExample";
 
 function App() {
     return (<div className={'App'}>
@@ -30,8 +31,9 @@ function App() {
             <div className={'flex-container flex-evenly w-100'}>
                 <UseStateExample/>
                 <UseEffectExample/>
-                <UseRefExample/>
                 <UseCallbackExample/>
+                <UseRefExample/>
+                <PropsExample/>
             </div>
         </header>
     </div>);
