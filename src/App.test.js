@@ -9,7 +9,8 @@ import UseCallbackExample from "./examples/useCallbackExample"; // Importe le co
 import PropsExample from "./examples/propsExample"; // Importe le composant PropsExample
 import MemoExample from "./examples/useMemoExample"; // Importe le composant MemoExample
 import UseContextExample, { ThemeContext } from './examples/UseContextExample'; // Importe le composant UseContextExample et le contexte ThemeContext
-import UseReducerExample from "./examples/useReducerExample"; // Assurez-vous que le chemin d'importation est correct
+import UseReducerExample from "./examples/useReducerExample";
+import CustomHookExample from "./examples/customHookExample"; // Assurez-vous que le chemin d'importation est correct
 
 // Tests pour le composant UseStateExample
 describe('UseStateExamples Component', () => {
@@ -131,6 +132,25 @@ describe('UseReducerExample Component', () => {
     test('incrémenter et décrémenter le compteur', () => {
         // Monter le composant
         render(<UseReducerExample/>);
+
+        // Trouver les boutons
+        const incrementButton = screen.getByRole('button', { name: 'Incrémenter' }); // Récupère le bouton "Incrémenter"
+        const decrementButton = screen.getByRole('button', { name: 'Décrémenter' }); // Récupère le bouton "Décrémenter"
+
+        // Simuler des clics et vérifier la mise à jour de l'état
+        fireEvent.click(incrementButton); // Simule le clic sur le bouton "Incrémenter"
+        expect(screen.getByText('Compteur : 1')).toBeInTheDocument(); // Vérifie si le texte "Compteur : 1" est présent dans le document
+
+        fireEvent.click(decrementButton); // Simule le clic sur le bouton "Décrémenter"
+        expect(screen.getByText('Compteur : 0')).toBeInTheDocument(); // Vérifie si le texte "Compteur : 0" est présent dans le document
+    });
+});
+
+// Tests pour le composant CustomHookExample
+describe('CustomHookExample Component', () => {
+    test('incrémenter et décrémenter le compteur', () => {
+        // Monter le composant
+        render(<CustomHookExample/>);
 
         // Trouver les boutons
         const incrementButton = screen.getByRole('button', { name: 'Incrémenter' }); // Récupère le bouton "Incrémenter"
