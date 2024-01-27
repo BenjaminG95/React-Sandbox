@@ -120,7 +120,6 @@ function UseStateExample() {
             <p className="text-small">Chaque clique incrémente le compteur</p>
             <p className="text-small">Compteur : {count}</p>
         </div>
-
     </>);
 }
 
