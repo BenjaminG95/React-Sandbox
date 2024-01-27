@@ -68,7 +68,7 @@ function EffectExample() {
     return (<>
         <div className={'flex-column'}>
             <button className={'btn btn-secondary'} onClick={incrementCount}>
-                Incrémenter le compteur et tester le useEffect, voir le titre de l'onglet du navigateur
+                Incrémenter le compteur et tester le useEffect
             </button>
             <p className={'text-small'}>Chaque clique incrémente le compteur, puis change le nom de l'onglet.</p>
             <p className={'text-small'}>Compteur : {count}</p>
