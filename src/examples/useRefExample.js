@@ -40,14 +40,14 @@
 
 import React, {useRef} from "react";
 
-function UseRefExample() {
+function UseRefExample() : JSX.Element {
     // Créez une référence pour un élément du DOM
     // useRef() renvoie un objet mutable avec une propriété current initialement définie sur la valeur passée en argument (initialValue).
     // La valeur renvoyée par useRef sera persistante pendant toute la durée de vie du composant.
     const inputRef = useRef(null);
 
     // Fonction pour se concentrer sur l'input lorsque le bouton est cliqué
-    function focusOnInputAndSetValue() {
+    function focusOnInputAndSetValue(): void {
         // Accès direct à l'élément du DOM et mise au point sur celui-ci
         // inputRef.current est l'élément du DOM
 
@@ -62,16 +62,21 @@ function UseRefExample() {
     }
 
     return (<>
-        <div className={'flex-column'}>
+        <div className={'flex-column flex-item'}>
             <h2>UseRef( )</h2>
+
             <button className={'btn btn-danger'} onClick={focusOnInputAndSetValue}>
-                Focus sur l'input et tester le useRef
+                Utiliser useRef( )
             </button>
+            <a className={'color-teal text-small mt-2'}
+               href={'https://github.com/BenjaminG95/React-Sandbox/blob/main/src/examples/useRefExample.js'}
+               target={"_blank"} rel="noreferrer">Code source de UseRefExemple</a>
+
             <p className={'text-small'}>
                 Cliquez sur le bouton pour mettre le focus sur
                 <br/>le champ de texte et ajouter la value "Hello World".
             </p>
-            <input ref={inputRef} className={'text-small'} type="text"/>
+            <input ref={inputRef} className={'text-small mt-2'} type="text"/>
         </div>
     </>);
 }

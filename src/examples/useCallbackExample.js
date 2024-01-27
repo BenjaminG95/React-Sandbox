@@ -43,29 +43,33 @@
 import React, {useState, useCallback} from "react";
 
 // Composant enfant qui reçoit une fonction 'onAction' comme prop et affiche un bouton
-function ChildComponent({onAction}) {
+function ChildComponent({onAction}): JSX.Element  {
     console.log("Rendu de ChildComponent");
     return <button className={'btn btn-success'}
-                   onClick={onAction}>Incrémenter le compteur
+                   onClick={onAction}>Utiliser useCallback( )
     </button>;
 }
 
 // Composant parent qui utilise le hook 'useCallback'
-function UseCallbackExample() {
+function UseCallbackExample(): JSX.Element  {
     // 'count' est une variable d'état qui garde le compte des clics
     const [count, setCount] = useState(0);
 
     // 'incrementCount' est une fonction mémorisée qui incrémente 'count'
     // useCallback s'assure que cette fonction n'est recréée que si les dépendances (ici, []) changent
-    const incrementCount = useCallback(() => {
+    const incrementCount = useCallback((): void => {
         setCount(c => c + 1); // Incrémente 'count' de 1
-    }, []); // Dépendances vides: la fonction ne sera recréée que lors du premier rendu
+    }, []); // Dépendances vides : la fonction ne sera recréée que lors du premier rendu
 
     return (
-        <div className="flex-column">
+        <div className="flex-column flex-item">
             <h2>UseCallback( )</h2>
             <ChildComponent onAction={incrementCount}/>
-            <p className="text-small">Compteur actuel : {count}</p>
+            <a className={'color-teal text-small mt-2'}
+               href={'https://github.com/BenjaminG95/React-Sandbox/blob/main/src/examples/useCallbackExample.js'}
+               target={"_blank"} rel="noreferrer">Code source de UseCallbackExample</a>
+            <p className={'text-small'}>Chaque clique incrémente le compteur<br/>
+                Compteur actuel : {count}</p>
             {/* Le ChildComponent reçoit 'incrementCount'.
                 Grâce à useCallback, 'incrementCount' garde la même référence à chaque rendu,
                 évitant ainsi des rendus inutiles du ChildComponent. */}

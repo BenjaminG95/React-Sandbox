@@ -1,22 +1,37 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #c63df1;
+    --danger-color: #dc3545;
+    --success-color: #28a745;
+    --text-small-size: 0.8em;
+    --btn-font-size: 1em;
+    --btn-padding: 0.7em;
+    --btn-border-radius: 1em;
+    --btn-hover-transition: background-color 0.3s ease;
+    --app-bg-color: #282c34;
+    --app-text-color: white;
+    --logo-height-small: 20vmin;
+    --logo-height-large: 30vmin;
+}
+
 .App {
     text-align: center;
 }
 
 .App-header {
-    background-color: #282c34;
+    background-color: var(--app-bg-color);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
-    color: white;
+    color: var(--app-text-color);
 }
 
 .App-logo {
-    height: 30vmin;
+    height: var(--logo-height-small);
     pointer-events: none;
-    animation: App-logo-spin infinite 20s linear;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -35,47 +50,51 @@
 }
 
 .btn {
-    padding: 0.7em;
-    border-radius: 1em;
-    font-size: 0.6em;
+    padding: var(--btn-padding);
+    border-radius: var(--btn-border-radius);
+    font-size: var(--btn-font-size);
     color: #fff;
-    transition: background-color 0.3s ease;
+    transition: var(--btn-hover-transition);
 }
 
 .btn-primary {
-    background-color: #007bff;
+    background-color: var(--primary-color);
 }
 
 .btn-primary:hover {
-    background-color: #0069d9;
+    background-color: #1e62ab;
 }
 
 .btn-secondary {
-    background-color: #c63df1;
+    background-color: var(--secondary-color);
 }
 
 .btn-secondary:hover {
-    background-color: #a63bc6;
+    background-color: #7d3194;
 }
 
 .btn-danger {
-    background-color: #dc3545;
+    background-color: var(--danger-color);
 }
 
 .btn-danger:hover {
-    background-color: #c82333;
+    background-color: #8f232f;
 }
 
 .btn-success {
-    background-color: #28a745;
+    background-color: var(--success-color);
 }
 
-.btn-success:hover{
-    background-color: #228839;
+.btn-success:hover {
+    background-color: #236e35;
+}
+
+.color-teal {
+    color: #61DAFB;
 }
 
 .text-small {
-    font-size: 0.5em;
+    font-size: var(--text-small-size);
 }
 
 .flex-container {
@@ -98,4 +117,43 @@
 
 .w-100 {
     width: 100%;
+}
+
+.mt-2 {
+    margin-top: 1em;
+}
+
+@media (min-width: 768px) {
+    .App-logo {
+        height: var(--logo-height-large);
+    }
+
+    .text-small {
+        font-size: calc(var(--text-small-size) * 0.9);
+    }
+
+    .btn {
+        font-size: calc(var(--btn-font-size) * 0.9);
+    }
+}
+
+.flex-item {
+    flex-basis: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0.5%;
+}
+
+@media (min-width: 1600px) {
+    .flex-item {
+        flex-basis: 100%;
+        max-width: 20%;
+    }
+}
+
+    @media (min-width: 1200px) and (max-width: 1599px) {
+        .flex-item {
+            flex-basis: 100%;
+            max-width: 45%;
+        }
 }

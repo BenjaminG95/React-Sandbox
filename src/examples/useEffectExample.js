@@ -36,7 +36,7 @@
 
 import React, {useState, useEffect} from "react";
 
-function EffectExample() {
+function EffectExample(): JSX.Element {
     // utilisation de useState pour créer une variable d'état 'count' initialisée à 0
     // voir useStateExamples.js pour plus d'informations sur useState
     const [count, setCount] = useState(0);
@@ -60,18 +60,22 @@ function EffectExample() {
         };
     }, [count]); // L'effet s'exécute uniquement si 'count' change.
 
-    function incrementCount() {
+    function incrementCount(): void {
         setCount(count + 1);
     }
 
     return (<>
-        <div className={'flex-column'}>
+        <div className={'flex-column flex-item'}>
             <h2>UseEffect( )</h2>
             <button className={'btn btn-secondary'} onClick={incrementCount}>
-                Incrémenter le compteur et tester le useEffect
+                Utiliser useEffect( )
             </button>
-            <p className={'text-small'}>Chaque clique incrémente le compteur, puis change le nom de l'onglet.</p>
-            <p className={'text-small'}>Compteur : {count}</p>
+            <a className={'color-teal text-small mt-2'}
+               href={'https://github.com/BenjaminG95/React-Sandbox/blob/main/src/examples/useEffectExample.js'}
+               target={"_blank"} rel="noreferrer">Code source de UseEffectExample</a>
+            <p className={'text-small'}>Chaque clique incrémente le compteur, puis change le nom de l'onglet.<br/>
+                Compteur actuel : {count}</p>
+
         </div>
     </>);
 }
