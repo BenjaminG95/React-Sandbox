@@ -47,7 +47,7 @@ function UseRefExample() {
     const inputRef = useRef(null);
 
     // Fonction pour se concentrer sur l'input lorsque le bouton est cliqué
-    function focusOnInput() {
+    function focusOnInputAndSetValue() {
         // Accès direct à l'élément du DOM et mise au point sur celui-ci
         // inputRef.current est l'élément du DOM
 
@@ -64,7 +64,7 @@ function UseRefExample() {
     return (<>
         <div className={'flex-column'}>
             <h2>UseRef( )</h2>
-            <button className={'btn btn-danger'} onClick={focusOnInput}>
+            <button className={'btn btn-danger'} onClick={focusOnInputAndSetValue}>
                 Focus sur l'input et tester le useRef
             </button>
             <p className={'text-small'}>
