@@ -6,10 +6,14 @@ import UseEffectExample from "./examples/useEffectExample";
 import UseRefExample from "./examples/useRefExample";
 import UseCallbackExample from "./examples/useCallbackExample";
 import PropsExample from "./examples/propsExample";
+import MemoExample from "./examples/useMemoExample";
 
 function App() {
     return (<div className={'App'}>
         <header className={'App-header'}>
+            <h1> React Sandbox </h1>
+        </header>
+        <main className={'App-main'}>
             <img src={logo} className="App-logo" alt="logo"/>
             <p className={'text-small'}>
                 Les fichiers avec les informations concernant ces méthodes sont disponibles <a
@@ -33,9 +37,10 @@ function App() {
                 <UseEffectExample/>
                 <UseCallbackExample/>
                 <UseRefExample/>
+                <MemoExample/>
                 <PropsExample/>
             </div>
-        </header>
+        </main>
     </div>);
 }
 

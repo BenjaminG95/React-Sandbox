@@ -7,6 +7,7 @@ import UseRefExample from './examples/UseRefExample'; // Importe le composant Us
 import UseEffectExample from './examples/UseEffectExample'; // Importe le composant UseEffectExample
 import UseCallbackExample from "./examples/useCallbackExample"; // Importe le composant UseCallbackExample
 import PropsExample from "./examples/propsExample"; // Importe le composant PropsExample
+import MemoExample from "./examples/useMemoExample"; // Importe le composant PropsExample
 
 // Tests pour le composant UseStateExample
 describe('UseStateExamples Component', () => {
@@ -86,5 +87,20 @@ describe('PropsExample Component', () => {
         fireEvent.click(button); // Simule le clic sur le bouton
 
         expect(screen.getByText(/Nouveau message/i)).toBeInTheDocument(); // Vérifie si le texte "Nouveau message" est présent dans le document
+    });
+});
+
+// Tests pour le composant MemoExample
+describe('MemoExample Component', () => {
+    test('affiche la longueur de la chaîne mémorisée', () => {
+        // Monter le composant
+        render(<MemoExample />);
+
+        // Trouver l'élément d'entrée et simuler une saisie utilisateur
+        const inputElement = screen.getByRole('textbox'); // Récupère l'input du composant
+        fireEvent.change(inputElement, { target: { value: 'test' } }); // Simule la saisie du texte "test" dans l'input
+
+        // Vérifier si la longueur affichée correspond à la longueur de la chaîne saisie
+        expect(screen.getByText('Longueur de la chaîne mémorisée : 4')).toBeInTheDocument();
     });
 });
