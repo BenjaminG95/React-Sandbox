@@ -63,7 +63,7 @@ function UseContextExample(): JSX.Element {
             <div className="flex-column flex-item">
                 <h2>UseContext( )</h2>
                 <button className={'btn btn-primary'} onClick={toggleTheme}>
-                    Changer de thème
+                    Utiliser UseContext( )
                 </button>
                 <a className={'color-teal text-small my-2'}
                    href={'https://github.com/BenjaminG95/React-Sandbox/blob/main/src/examples/useContextExample.js'}
