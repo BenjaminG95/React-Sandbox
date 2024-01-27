@@ -38,7 +38,7 @@ export const ThemeContext = createContext('light');
 function ChildComponent(): JSX.Element {
     const theme = useContext(ThemeContext); // Accès au thème actuel
     return (
-        <div className={`theme-${theme}`}>
+        <div className={`theme-${theme} mt-1`}>
             Thème actuel : {theme}
         </div>
     );

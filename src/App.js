@@ -9,6 +9,7 @@ import PropsExample from "./examples/propsExample";
 import MemoExample from "./examples/useMemoExample";
 import UseContextExample from "./examples/useContextExample";
 import UseReducerExample from "./examples/useReducerExample";
+import CustomHookExample from "./examples/customHookExample";
 
 function App() {
     return (<div className={'App'}>
@@ -43,6 +44,7 @@ function App() {
                 <PropsExample/>
                 <UseReducerExample/>
                 <UseContextExample/>
+                <CustomHookExample/>
             </div>
         </main>
     </div>);
