@@ -25,3 +25,12 @@ Dans votre terminal, placé dans le projet, tapez la commande : `npm i`
 Dans votre terminal, placé dans le projet, tapez la commande : `npm start`
 
 L'application se lancera dans votre navigateur par défaut à l'adresse : `localhost:3000`
+
+# Utilisation
+Consultez les fichiers contenus dans le dossier `src` pour voir les différents composants et leurs utilisations.
+
+# auteur
+Benjamin Galois
+- [Site Web](https://benjamin-galois.fr) 
+- [LinkedIn](https://www.linkedin.com/in/benjamingalois/)
+- [Malt](https://www.malt.fr/profile/benjamingalois)
