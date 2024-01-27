@@ -26,6 +26,8 @@ Dans votre terminal, placé dans le projet, tapez la commande : `npm start`
 
 L'application se lancera dans votre navigateur par défaut à l'adresse : `localhost:3000`
 
+Vous pouvez voir l'application en live ici: [https://benjaming95.github.io/React-Sandbox](https://benjaming95.github.io/React-Sandbox/)
+
 # Utilisation
 Consultez les fichiers contenus dans le dossier `src` puis `examples` pour voir les différents composants et leurs utilisations.
 
