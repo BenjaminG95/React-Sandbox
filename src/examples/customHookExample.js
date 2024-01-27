@@ -55,6 +55,8 @@
  * tandis que les Hooks personnalisés sont un modèle de conception permettant de réutiliser une logique
  * d'état, d'effets de côté, ou d'autres comportements entre différents composants. Un Hook personnalisé
  * peut intégrer useReducer en son sein si la logique de gestion de l'état l'exige.
+ *
+ *  Voir https://fr.react.dev/learn/reusing-logic-with-custom-hooks pour plus d'informations.
  */
 
 import React, {useState, useCallback} from 'react';
