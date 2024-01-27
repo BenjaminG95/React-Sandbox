@@ -44,13 +44,13 @@ import React, {useState} from "react";
 
 // Nous allons créer une fonction qui va incrémenter un compteur à chaque clique sur un bouton
 // cette dernière utilisera le Hook useState
-function UseStateExample() {
+function UseStateExample(): JSX.Element {
     // ici, count est la variable d'état et setCount est la fonction de mise à jour de l'état
     // useState(0) initialise count à 0
     const [count, setCount] = useState(0);
 
     // incrémente count de 1 à chaque clique sur le bouton
-    function incrementCountDirectWay() {
+    function incrementCountDirectWay(): void {
         setCount(count + 1);
         /* setCount(count + 1); */
 
@@ -59,7 +59,7 @@ function UseStateExample() {
         // Cela reviendrait à faire setCount(0 + 1) deux fois, ce qui donnerait finalement 1, et non 2.
     }
 
-    function IncrementCountWithPrevCount() {
+    function IncrementCountWithPrevCount(): void {
         // 'prevCount' est la valeur actuelle de 'count' au moment où cette mise à jour est appliquée.
         // Étant donné que count est initialisé à 0, prevCount aura la valeur 0 lors de la première incrémentation.
         setCount(prevCount => prevCount + 1);
@@ -76,7 +76,7 @@ function UseStateExample() {
         // Par exemple, pour un booléen, nous pourrions faire : setBoolean(prevBool => !prevBool); pour basculer sa valeur au clique.
     }
 
-    function IncrementButtonGoFurtherIntoLogic() {
+    function IncrementButtonGoFurtherIntoLogic(): void {
         // Première incrémentation : Ajoute 1 à 'count' directement.
         // Cette méthode est simple et efficace si l'état actuel n'est pas critique.
         setCount(count + 1);
@@ -109,16 +109,20 @@ function UseStateExample() {
     }
 
     return (<>
-        <div className="flex-column">
+        <div className="flex-column flex-item">
             <h2>UseState( )</h2>
             {/*Changez le nom de la fonction appelée dans le onClick pour tester les différentes méthodes*/}
             <button className='btn btn-primary'
                     onClick={incrementCountDirectWay}
             >
-                Incrémenter le compteur et tester le useState
+               Utiliser useState( )
             </button>
-            <p className="text-small">Chaque clique incrémente le compteur</p>
-            <p className="text-small">Compteur : {count}</p>
+            <a className={'color-teal text-small mt-2'}
+               href={'https://github.com/BenjaminG95/React-Sandbox/blob/main/src/examples/useStateExample.js'}
+               target={"_blank"} rel="noreferrer">Code source de useStateExample</a>
+            <p className={'text-small'}>Chaque clique incrémente le compteur <br/>
+           Compteur actuel : {count} <br/>
+            </p>
         </div>
     </>);
 }
