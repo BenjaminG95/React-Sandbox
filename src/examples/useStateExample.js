@@ -44,7 +44,7 @@ import React, {useState} from "react";
 
 // Nous allons créer une fonction qui va incrémenter un compteur à chaque clique sur un bouton
 // cette dernière utilisera le Hook useState
-function UseStateExamples() {
+function UseStateExample() {
     // ici, count est la variable d'état et setCount est la fonction de mise à jour de l'état
     // useState(0) initialise count à 0
     const [count, setCount] = useState(0);
@@ -120,9 +120,8 @@ function UseStateExamples() {
             <p className="text-small">Chaque clique incrémente le compteur</p>
             <p className="text-small">Compteur : {count}</p>
         </div>
-
     </>);
 }
 
-export default UseStateExamples;
+export default UseStateExample;
 

@@ -50,21 +50,29 @@ function UseRefExample() {
     function focusOnInput() {
         // Accès direct à l'élément du DOM et mise au point sur celui-ci
         // inputRef.current est l'élément du DOM
-        // inputRef.current.focus() met le focus sur l'élément du DOM
-        // inputRef.current.focus() est équivalent à document.querySelector('input').focus()
-        inputRef.current && inputRef.current.focus();
+
+        // Le if est une sécurité pour éviter une erreur si l'élément n'existe pas
+        if (inputRef.current) {
+            // Affecte la valeur à l'élément input
+            inputRef.current.value = "Hello World";
+            // inputRef.current.focus() met le focus sur l'élément du DOM
+            // inputRef.current.focus() est équivalent à document.querySelector('input').focus()
+            inputRef.current.focus();
+        }
     }
 
-    return (<div className={'flex-column'}>
+    return (<>
+        <div className={'flex-column'}>
             <h2>UseRef</h2>
             <button className={'btn btn-danger'} onClick={focusOnInput}>
                 Focus sur l'input et tester le useRef
             </button>
             <p className={'text-small'}>
-                Cliquez sur le bouton pour mettre le focus sur le champ de texte.
+                Cliquez sur le bouton pour mettre le focus sur le champ de texte et ajouter la value "Hello World".
             </p>
             <input ref={inputRef} className={'text-small'} type="text"/>
-        </div>);
+        </div>
+    </>);
 }
 
 export default UseRefExample;
