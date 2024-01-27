@@ -4,6 +4,7 @@ import logo from './logo.svg';
 import UseStateExample from './examples/useStateExample';
 import UseEffectExample from "./examples/useEffectExample";
 import UseRefExample from "./examples/useRefExample";
+import UseCallbackExample from "./examples/useCallbackExample";
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
                     <UseStateExample/>
                     <UseEffectExample/>
                     <UseRefExample/>
+                    <UseCallbackExample/>
                 </div>
             </header>
         </div>

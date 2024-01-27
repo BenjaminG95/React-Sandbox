@@ -66,6 +66,14 @@
     background-color: #c82333;
 }
 
+.btn-success {
+    background-color: #28a745;
+}
+
+.btn-success:hover{
+    background-color: #228839;
+}
+
 .text-small {
     font-size: 0.5em;
 }
