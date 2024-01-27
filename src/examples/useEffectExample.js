@@ -60,7 +60,6 @@ function EffectExample() {
         };
     }, [count]); // L'effet s'exécute uniquement si 'count' change.
 
-
     function incrementCount() {
         setCount(count + 1);
     }
