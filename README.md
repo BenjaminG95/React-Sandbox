@@ -33,4 +33,3 @@ Consultez les fichiers contenus dans le dossier `src` puis `examples` pour voir 
 Benjamin Galois
 - [Site Web](https://benjamin-galois.fr) 
 - [LinkedIn](https://www.linkedin.com/in/benjamingalois/)
-- [Malt](https://www.malt.fr/profile/benjamingalois)
