@@ -3,6 +3,7 @@ import logo from './logo.svg';
 
 import UseStateExamples from './examples/useStateExamples';
 import UseEffectExample from "./examples/useEffectExample";
+import UseRefExample from "./examples/useRefExample";
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
                 <div className={'flex-container flex-evenly w-100'}>
                     <UseStateExamples/>
                     <UseEffectExample/>
+                    <UseRefExample/>
                 </div>
             </header>
         </div>

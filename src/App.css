@@ -62,6 +62,15 @@
   background-color: #a63bc6;
 }
 
+.btn-danger{
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.btn-danger:hover{
+  background-color: #c82333;
+}
+
 .text-small{
   font-size: .5em;
 }
@@ -69,7 +78,10 @@
 .flex-container {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  justify-content: center;
+
 }
 
 .flex-column {

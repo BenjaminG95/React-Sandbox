@@ -51,7 +51,7 @@ function EffectExample() {
         // En tant que Hook, useEffect combine les fonctionnalités des méthodes de cycle de vie des composants de classe
         // comme componentDidMount, componentDidUpdate, et componentWillUnmount dans un seul et même endroit.
         // Pour en savoir plus sur useEffect et ses multiples applications, consultez la documentation officielle de React :
-        // https://fr.reactjs.org/docs/hooks-effect.html
+        // https://react.dev/reference/react/useEffect
 
         // La fonction de nettoyage ci-dessous est appelée avant que le composant ne se démonte
         // ou avant la prochaine exécution de l'effet si 'count' change.
