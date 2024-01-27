@@ -74,8 +74,8 @@ function EffectExample(): JSX.Element {
                href={'https://github.com/BenjaminG95/React-Sandbox/blob/main/src/examples/useEffectExample.js'}
                target={"_blank"} rel="noreferrer">Code source de UseEffectExample</a>
             <p className={'text-small'}>Chaque clique incrémente le compteur, puis change le nom de l'onglet.<br/>
-                Compteur actuel : {count}</p>
-
+                Compteur actuel : {count}
+            </p>
         </div>
     </>);
 }

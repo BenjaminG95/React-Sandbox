@@ -64,14 +64,12 @@ function UseRefExample() : JSX.Element {
     return (<>
         <div className={'flex-column flex-item'}>
             <h2>UseRef( )</h2>
-
             <button className={'btn btn-danger'} onClick={focusOnInputAndSetValue}>
                 Utiliser useRef( )
             </button>
             <a className={'color-teal text-small mt-2'}
                href={'https://github.com/BenjaminG95/React-Sandbox/blob/main/src/examples/useRefExample.js'}
                target={"_blank"} rel="noreferrer">Code source de UseRefExemple</a>
-
             <p className={'text-small'}>
                 Cliquez sur le bouton pour mettre le focus sur
                 <br/>le champ de texte et ajouter la value "Hello World".

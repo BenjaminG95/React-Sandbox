@@ -122,7 +122,6 @@ function UseStateExample(): JSX.Element {
                target={"_blank"} rel="noreferrer">Code source de useStateExample</a>
             <p className={'text-small'}>Chaque clique incrémente le compteur <br/>
            Compteur actuel : {count} <br/>
-
             </p>
         </div>
     </>);

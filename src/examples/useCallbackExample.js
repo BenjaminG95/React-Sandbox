@@ -69,7 +69,8 @@ function UseCallbackExample(): JSX.Element  {
                href={'https://github.com/BenjaminG95/React-Sandbox/blob/main/src/examples/useCallbackExample.js'}
                target={"_blank"} rel="noreferrer">Code source de UseCallbackExample</a>
             <p className={'text-small'}>Chaque clique incrémente le compteur<br/>
-                Compteur actuel : {count}</p>
+                Compteur actuel : {count}
+            </p>
             {/* Le ChildComponent reçoit 'incrementCount'.
                 Grâce à useCallback, 'incrementCount' garde la même référence à chaque rendu,
                 évitant ainsi des rendus inutiles du ChildComponent. */}
