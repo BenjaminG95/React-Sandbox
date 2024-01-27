@@ -37,19 +37,21 @@
  * En résumé, les props sont essentielles pour créer des composants interactifs et réactifs dans React. Elles
  * permettent aux composants de communiquer entre eux et de rester modulaires et réutilisables, tout en gardant une
  * structure de données cohérente et prévisible.
+ *
+ * Voir la documentation officielle : https://react.dev/learn/passing-props-to-a-component
  */
 
 import React, { useState } from "react";
 
 // Composant enfant qui affiche le message et permet de le modifier
-function MessageDisplay({ message, updateMessage }) {
+function MessageDisplay({ message, updateMessage }): JSX.Element {
     const [newMessage, setNewMessage] = useState(""); // État local pour stocker le nouveau message saisi
 
-    const handleInputChange = (e) => {
+    const handleInputChange = (e): void => {
         setNewMessage(e.target.value); // Mettre à jour l'état local avec le texte saisi
     };
 
-    const handleSubmit = () => {
+    const handleSubmit = (): void => {
         updateMessage(newMessage); // Appeler la fonction de mise à jour avec le nouveau message
         setNewMessage(""); // Réinitialiser le champ de saisie
     };
@@ -70,11 +72,11 @@ function MessageDisplay({ message, updateMessage }) {
 }
 
 // Composant parent qui contient le message et la fonction de mise à jour du message
-function PropsExample() {
+function PropsExample(): JSX.Element {
     const [message, setMessage] = useState("Message initial"); // État local pour stocker le message
 
     // Fonction de mise à jour du message
-    const changeMessage = (newMessage) => {
+    const changeMessage = (newMessage): void => {
         setMessage(newMessage);
     };
 
