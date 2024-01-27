@@ -7,6 +7,7 @@ import UseRefExample from "./examples/useRefExample";
 import UseCallbackExample from "./examples/useCallbackExample";
 import PropsExample from "./examples/propsExample";
 import MemoExample from "./examples/useMemoExample";
+import UseContextExample from "./examples/useContextExample";
 
 function App() {
     return (<div className={'App'}>
@@ -39,6 +40,7 @@ function App() {
                 <UseRefExample/>
                 <MemoExample/>
                 <PropsExample/>
+                <UseContextExample/>
             </div>
         </main>
     </div>);

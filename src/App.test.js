@@ -7,7 +7,8 @@ import UseRefExample from './examples/UseRefExample'; // Importe le composant Us
 import UseEffectExample from './examples/UseEffectExample'; // Importe le composant UseEffectExample
 import UseCallbackExample from "./examples/useCallbackExample"; // Importe le composant UseCallbackExample
 import PropsExample from "./examples/propsExample"; // Importe le composant PropsExample
-import MemoExample from "./examples/useMemoExample"; // Importe le composant PropsExample
+import MemoExample from "./examples/useMemoExample"; // Importe le composant MemoExample
+import UseContextExample, { ThemeContext } from './examples/UseContextExample'; // Assurez-vous que le chemin d'importation est correct
 
 // Tests pour le composant UseStateExample
 describe('UseStateExamples Component', () => {
@@ -102,5 +103,24 @@ describe('MemoExample Component', () => {
 
         // Vérifier si la longueur affichée correspond à la longueur de la chaîne saisie
         expect(screen.getByText('Longueur de la chaîne mémorisée : 4')).toBeInTheDocument();
+    });
+});
+
+// Tests pour le composant UseContextExample
+describe('UseContextExample Component', () => {
+    test('change le thème et affiche le thème actuel', () => {
+        // Monter le composant dans le Provider
+        render(
+            <ThemeContext.Provider value="light">
+                <UseContextExample />
+            </ThemeContext.Provider>
+        ); // Rend le composant dans le contexte "light"
+
+        // Trouver le bouton et simuler un clic pour changer le thème
+        const buttonElement = screen.getByRole('button', { name: 'Changer de thème' }); // Récupère le bouton du composant
+        fireEvent.click(buttonElement); // Simule le clic sur le bouton
+
+        // Vérifie si le texte "thème actuel : dark" est présent dans le document
+        expect(screen.getByText(/thème actuel : dark/i)).toBeInTheDocument();
     });
 });
