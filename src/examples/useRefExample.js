@@ -63,7 +63,7 @@ function UseRefExample() {
 
     return (<>
         <div className={'flex-column'}>
-            <h2>UseRef</h2>
+            <h2>UseRef( )</h2>
             <button className={'btn btn-danger'} onClick={focusOnInput}>
                 Focus sur l'input et tester le useRef
             </button>

@@ -111,7 +111,7 @@ function UseStateExample() {
     return (<>
         {/*Changez le nom de la fonction appelée dans le onClick pour tester les différentes méthodes*/}
         <div className="flex-column">
-            <h2>UseState</h2>
+            <h2>UseState( )</h2>
             <button className='btn btn-primary'
                     onClick={incrementCountDirectWay}
             >

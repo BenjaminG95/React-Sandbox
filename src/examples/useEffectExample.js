@@ -66,7 +66,7 @@ function EffectExample() {
 
     return (<>
         <div className={'flex-column'}>
-            <h2>UseEffect</h2>
+            <h2>UseEffect( )</h2>
             <button className={'btn btn-secondary'} onClick={incrementCount}>
                 Incrémenter le compteur et tester le useEffect
             </button>
