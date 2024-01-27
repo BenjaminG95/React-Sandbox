@@ -29,6 +29,8 @@ L'application se lancera dans votre navigateur par défaut à l'adresse : `local
 # Utilisation
 Consultez les fichiers contenus dans le dossier `src` puis `examples` pour voir les différents composants et leurs utilisations.
 
+Vous pouvez également consulter le fichier de test `App.test.js` situé dans le dossié `src`
+
 # auteur
 Benjamin Galois
 - [Site Web](https://benjamin-galois.fr) 
