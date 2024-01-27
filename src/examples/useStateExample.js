@@ -92,7 +92,7 @@ function UseStateExample() {
         // Les mises à jour d'état sont asynchrones, donc 'count' n'est pas mis à jour immédiatement.
         // Donc, cette incrémentation est basée sur la valeur initiale de 'count', soit 0.
         setCount(count + 3);
-        // si nous arrêtions le code ici, 'count' aurait la valeur 3, une itération de 2 serait donc effectué à chaque clique sur le bouton
+        // si nous arrêtions le code ici, 'count' aurait la valeur 3, une itération de 3 serait donc effectué à chaque clique sur le bouton
 
         // Quatrième incrémentation : Utilise une fonction pour ajouter 2 à 'count'.
         // Encore une fois, 'prevCount' représente la valeur actuelle de 'count' lors de cette mise à jour, soit 3.
