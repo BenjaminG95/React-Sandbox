@@ -6,6 +6,7 @@ import UseEffectExample from "./examples/useEffectExample";
 import UseRefExample from "./examples/useRefExample";
 import UseCallbackExample from "./examples/useCallbackExample";
 import PropsExample from "./examples/propsExample";
+import MemoExample from "./examples/useMemoExample";
 
 function App() {
     return (<div className={'App'}>
@@ -33,6 +34,7 @@ function App() {
                 <UseEffectExample/>
                 <UseCallbackExample/>
                 <UseRefExample/>
+                <MemoExample/>
                 <PropsExample/>
             </div>
         </header>

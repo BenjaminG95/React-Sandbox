@@ -134,6 +134,10 @@
     width: 100%;
 }
 
+.mt-1 {
+    margin-top: 0.8em;
+}
+
 .mt-2 {
     margin-top: 1em;
 }
@@ -148,6 +152,8 @@
     max-width: 100%;
     box-sizing: border-box;
     margin: 0.5%;
+    justify-items: stretch;
+
 }
 
 @media (min-width: 768px) {
