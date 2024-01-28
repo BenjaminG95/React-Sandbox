@@ -33,6 +33,8 @@ Consultez les fichiers contenus dans le dossier `src` puis `examples` pour voir 
 
 Vous pouvez également consulter le fichier de test `App.test.js` situé dans le dossier `src`
 
+Pour lancer les tests, utiliser la commande `npm test` dans votre terminal.
+
 # auteur
 Benjamin Galois
 - [Site Web](https://benjamin-galois.fr) 
