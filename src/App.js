@@ -24,12 +24,12 @@ function App() {
                 href={'https://github.com/BenjaminG95/React-Sandbox/tree/main'}
                 target={"_blank"} rel="noreferrer"
             >
-                sur le dépôt GitHub</a> dans le <a
+                sur le dépôt GitHub</a> dans le dossier src puis <a
                 className={'color-teal'}
                 href={'https://github.com/BenjaminG95/React-Sandbox/tree/main/src/examples'}
                 target={"_blank"} rel="noreferrer"
-            >
-                dossier src</a><br/>
+            >   examples
+                </a><br/>
                 N'hésitez pas à cloner le dépôt et à tester les différentes méthodes. Amusez-vous à comprendre comment
                 elles fonctionnent!
                 <br/>
