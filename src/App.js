@@ -1,15 +1,15 @@
 import './App.css';
 import logo from './logo.svg';
 
-import UseStateExample from './examples/useStateExample';
-import UseEffectExample from "./examples/useEffectExample";
-import UseRefExample from "./examples/useRefExample";
-import UseCallbackExample from "./examples/useCallbackExample";
-import PropsExample from "./examples/propsExample";
-import MemoExample from "./examples/useMemoExample";
-import UseContextExample from "./examples/useContextExample";
-import UseReducerExample from "./examples/useReducerExample";
-import CustomHookExample from "./examples/customHookExample";
+import UseStateExample from './examples/useStateExample/useStateExample';
+import UseEffectExample from "./examples/useEffectExample/useEffectExample";
+import UseRefExample from "./examples/useRefExample/useRefExample";
+import UseCallbackExample from "./examples/useCallbackExample/useCallbackExample";
+import PropsExample from "./examples/propsExample/propsExample";
+import MemoExample from "./examples/useMemoExample/useMemoExample";
+import UseContextExample from "./examples/useContextExample/useContextExample";
+import UseReducerExample from "./examples/useReducerExample/useReducerExample";
+import CustomHookExample from "./examples/customHookExample/customHookExample";
 
 function App() {
     return (<div className={'App'}>
