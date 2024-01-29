@@ -35,7 +35,7 @@ Vous pouvez également consulter les fichiers de tests contenu dans le dossier d
 
 Pour lancer les tests, utiliser la commande `npm test` dans votre terminal.
 
-# auteur
+# Auteur
 Benjamin Galois
 - [Site Web](https://benjamin-galois.fr) 
 - [LinkedIn](https://www.linkedin.com/in/benjamingalois/)
