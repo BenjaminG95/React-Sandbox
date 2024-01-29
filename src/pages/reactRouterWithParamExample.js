@@ -1,4 +1,4 @@
-// voir Pages/reactRouterExample.js pour plus d'explications
+// voir components/ReactRouterExample.js pour plus d'explications
 
 import {Link, useParams} from 'react-router-dom';
 
