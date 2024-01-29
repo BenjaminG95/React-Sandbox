@@ -215,6 +215,15 @@
     margin-top: 1em;
 }
 
+.mt-3 {
+    margin-top: 1.5em;
+}
+
+.mt-4 {
+    margin-top: 1.8em;
+}
+
+
 .my-2 {
     margin-top: 1em;
     margin-bottom: 1em;
