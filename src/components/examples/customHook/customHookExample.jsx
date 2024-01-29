@@ -72,7 +72,7 @@ function useCounter(initialValue = 0) {
 }
 
 // Composant qui utilise le Hook personnalisé 'useCounter'
-function CustomHookExample(): JSX.Element {
+function CustomHookExample() {
     const {count, increment, decrement} = useCounter(); // Utilisation de useCounter
 
     return (

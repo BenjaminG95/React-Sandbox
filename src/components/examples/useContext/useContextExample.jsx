@@ -35,7 +35,7 @@ import { useState, useContext, createContext } from 'react';
 export const ThemeContext = createContext('light');
 
 // Composant enfant qui utilise useContext pour accéder au thème
-function ChildComponent(): JSX.Element {
+function ChildComponent() {
     const theme = useContext(ThemeContext); // Accès au thème actuel
     return (
         <div className={`theme-${theme} mt-1`}>
@@ -45,11 +45,11 @@ function ChildComponent(): JSX.Element {
 }
 
 // Composant parent qui utilise le ThemeContext.Provider
-function UseContextExample(): JSX.Element {
+function UseContextExample() {
     const [theme, setTheme] = useState('light'); // Thème actuel
 
     // Fonction pour changer le thème
-    function toggleTheme(): void {
+    function toggleTheme() {
         setTheme(prevTheme => prevTheme === 'light' ? 'dark' : 'light'); // Changement du thème
     }
 
