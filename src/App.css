@@ -188,6 +188,17 @@
     align-items: center;
 }
 
+
+.flex-start{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.d-flex {
+    display: flex;
+}
+
 .flex-evenly {
     justify-content: space-evenly;
 }
@@ -279,4 +290,5 @@
 
 .decoration-none {
     text-decoration: none;
+    list-style-type: none;
 }
