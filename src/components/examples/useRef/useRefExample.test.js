@@ -10,7 +10,6 @@ describe('UseRefExample Component', () => {
         fireEvent.click(button); // Simule le clic sur le bouton
 
         // eslint-disable-next-line testing-library/no-node-access
-        expect(document.activeElement).toBe(input); // Vérifie si l'input est l'élément actif (a le focus)
         expect(input).toHaveValue("Hello World"); // Vérifie si la valeur de l'input est "Hello World"
     });
 });

@@ -40,6 +40,6 @@ describe('ReactRouterExample Component', () => {
         // Ciblage spécifique du lien en utilisant getByRole
         const linkElement = screen.getByRole('link', { name: /utiliser react router/i });
         expect(linkElement).toBeInTheDocument(); // Vérification de la présence du lien
-        expect(linkElement).toHaveAttribute('href', '/routerExample'); // Vérification de l'attribut href du lien
+        expect(linkElement).toHaveAttribute('href', '/router-example'); // Vérification de l'attribut href du lien
     });
 });
