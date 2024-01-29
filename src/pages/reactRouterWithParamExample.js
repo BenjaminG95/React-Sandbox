@@ -5,7 +5,7 @@ import {Link, useParams} from 'react-router-dom';
 function ReactRouterWithParamExample() {
     const {param} = useParams();
 
-    return (
+    return (<>
         <div>
             <div className={'App-main'}>
                 <h2>Le paramètre est '{param}'</h2>
@@ -18,7 +18,7 @@ function ReactRouterWithParamExample() {
                 </div>
             </div>
         </div>
-    );
+    </>);
 }
 
 export default ReactRouterWithParamExample;

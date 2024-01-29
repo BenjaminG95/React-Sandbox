@@ -11,18 +11,17 @@ function ReactRouterWithParamExample() {
     const handleSubmit = () => {
         if (param.trim() === "") {
             // Vérifie si le champ est vide et définit un message d'erreur
-            setError("Remplissez le paramètre");
+            setError("Remplissez le paramètre"); // Définit le message d'erreur
         } else {
             // Navigue vers la route avec le paramètre et réinitialise l'erreur
-            navigate(`/routerExample/${param}`);
-            setError("");
+            navigate(`/router-example/${param}`);
+            setError(""); // Réinitialiser l'erreur lors de la navigation
         }
     };
 
     return (<>
         <div className={'flex-column flex-item'}>
             <h2>React Router</h2>
-
             <button className={'btn btn-pink'} onClick={handleSubmit}>
                 React Router avec Param
             </button>

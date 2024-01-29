@@ -10,6 +10,7 @@ import UseContextExample from "../components/examples/useContext/useContextExamp
 import CustomHookExample from "../components/examples/customHook/customHookExample";
 import ReactRouterExample from "../components/examples/reactRouter/reactRouterExample";
 import ReactRouterWithParamExample from "../components/examples/reactRouter/reactRouterWithParamExample";
+import ReactResource from "../components/reactResources";
 
 const Home = () => {
     return (<>
@@ -44,6 +45,7 @@ const Home = () => {
                 <CustomHookExample/>
                 <ReactRouterExample/>
                 <ReactRouterWithParamExample/>
+                <ReactResource/>
             </div>
         </main>
     </>)

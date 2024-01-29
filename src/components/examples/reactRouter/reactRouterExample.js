@@ -49,7 +49,7 @@ function reactRouterExample () : JSX.Element {
     return (<>
         <div className={'flex-column flex-item'}>
             <h2>React Router</h2>
-            <Link className={'btn btn-light-blue decoration-none'} to={'routerExample'} >
+            <Link className={'btn btn-light-blue decoration-none'} to={'router-example'} >
                 Utiliser React Router
             </Link>
 
