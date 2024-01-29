@@ -1,4 +1,4 @@
-// voir components/ReactRouterExample.js pour plus d'explications
+// voir components/ReactRouterExample.jsx pour plus d'explications
 
 import React, { useState } from "react"; // Importation de useState pour gérer les états
 import { useNavigate } from "react-router-dom"; // Importation du hook useNavigate pour la navigation programmée
@@ -26,7 +26,7 @@ function ReactRouterWithParamExample() {
                 React Router avec Param
             </button>
             <a className={'color-teal text-small mt-2'}
-               href={'https://github.com/BenjaminG95/React-Sandbox/blob/main/src/components/examples/reactRouter/reactRouterWithParamExample.js'}
+               href={'https://github.com/BenjaminG95/React-Sandbox/blob/main/src/components/examples/reactRouter/reactRouterWithParamExample.jsx'}
                target={"_blank"} rel="noreferrer">Code source de reactRouterWithParamExample</a>
             <a className={'color-teal text-small mt-2'}
                href={'https://github.com/BenjaminG95/React-Sandbox/blob/main/src/App.js'}

@@ -118,7 +118,7 @@ function UseStateExample() {
                Utiliser useState( )
             </button>
             <a className={'color-teal text-small mt-2'}
-               href={'https://github.com/BenjaminG95/React-Sandbox/blob/main/src/components/examples/useState/useStateExample.js'}
+               href={'https://github.com/BenjaminG95/React-Sandbox/blob/main/src/components/examples/useState/useStateExample.jsx'}
                target={"_blank"} rel="noreferrer">Code source de useStateExample</a>
             <p className={'text-small'}>Chaque clique incrémente le compteur <br/>
            Compteur actuel : {count} <br/>

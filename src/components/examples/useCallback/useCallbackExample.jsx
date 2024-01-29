@@ -66,7 +66,7 @@ function UseCallbackExample()  {
             <h2>UseCallback( )</h2>
             <ChildComponent onAction={incrementCount}/>
             <a className={'color-teal text-small mt-2'}
-               href={'https://github.com/BenjaminG95/React-Sandbox/blob/main/src/components/examples/useCallback/useCallbackExample.js'}
+               href={'https://github.com/BenjaminG95/React-Sandbox/blob/main/src/components/examples/useCallback/useCallbackExample.jsx'}
                target={"_blank"} rel="noreferrer">Code source de UseCallbackExample</a>
             <p className={'text-small'}>Chaque clique incrémente le compteur<br/>
                 Compteur actuel : {count}
