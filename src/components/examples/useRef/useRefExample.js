@@ -64,7 +64,7 @@ function UseRefExample() : JSX.Element {
     return (<>
         <div className={'flex-column flex-item'}>
             <h2>UseRef( )</h2>
-            <button className={'btn btn-danger'} onClick={focusOnInputAndSetValue}>
+            <button className={'btn btn-info'} onClick={focusOnInputAndSetValue}>
                 Utiliser useRef( )
             </button>
             <a className={'color-teal text-small mt-2'}
