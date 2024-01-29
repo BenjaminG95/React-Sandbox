@@ -71,7 +71,7 @@ function EffectExample(): JSX.Element {
                 Utiliser useEffect( )
             </button>
             <a className={'color-teal text-small mt-2'}
-               href={'https://github.com/BenjaminG95/React-Sandbox/blob/main/src/examples/useEffectExample.js'}
+               href={'https://github.com/BenjaminG95/React-Sandbox/blob/main/src/components/examples/useEffect/useEffectExample.js'}
                target={"_blank"} rel="noreferrer">Code source de UseEffectExample</a>
             <p className={'text-small'}>Chaque clique incrémente le compteur, puis change le nom de l'onglet.<br/>
                 Compteur actuel : {count}

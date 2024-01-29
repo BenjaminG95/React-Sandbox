@@ -1,3 +1,5 @@
+// voir reactRouterExample pour les explications
+
 import { BrowserRouter as Router } from 'react-router-dom'; // Permet de simuler un router pour les tests
 import { render, screen } from '@testing-library/react'; // Permet de rendre un composant pour les tests
 import ReactRouterExample from './reactRouterExample';// Composant à tester

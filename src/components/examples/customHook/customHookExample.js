@@ -87,7 +87,7 @@ function CustomHookExample(): JSX.Element {
                 </button>
             </div>
             <a className={'color-teal text-small my-2'}
-               href={'https://github.com/BenjaminG95/React-Sandbox/blob/main/src/examples/customHookExample.js'}
+               href={'https://github.com/BenjaminG95/React-Sandbox/blob/main/src/components/examples/customHook/customHookExample.js'}
                target={"_blank"} rel="noreferrer">Code source de customHookExample</a>
             <p>Compteur : {count}</p>
             {/* CustomHookExample utilise le Hook personnalisé 'useCounter' pour gérer l'état et la logique du compteur. */}

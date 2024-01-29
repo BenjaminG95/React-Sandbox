@@ -66,7 +66,7 @@ function UseContextExample(): JSX.Element {
                     Utiliser UseContext( )
                 </button>
                 <a className={'color-teal text-small my-2'}
-                   href={'https://github.com/BenjaminG95/React-Sandbox/blob/main/src/examples/useContextExample.js'}
+                   href={'https://github.com/BenjaminG95/React-Sandbox/blob/main/src/components/examples/useContext/useContextExample.js'}
                    target={"_blank"} rel="noreferrer">Code source de UseContextExample</a>
                 <ChildComponent />
             </div>

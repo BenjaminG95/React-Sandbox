@@ -26,6 +26,12 @@ function ReactRouterWithParamExample() {
             <button className={'btn btn-pink mt-2'} onClick={handleSubmit}>
                 React Router avec Param
             </button>
+            <a className={'color-teal text-small mt-2'}
+               href={'https://github.com/BenjaminG95/React-Sandbox/blob/main/src/components/examples/reactRouter/reactRouterWithParamExample.js'}
+               target={"_blank"} rel="noreferrer">Code source de reactRouterWithParamExample</a>
+            <a className={'color-teal text-small mt-2'}
+               href={'https://github.com/BenjaminG95/React-Sandbox/blob/main/src/App.js'}
+               target={"_blank"} rel="noreferrer">Code source de app.js</a>
             {error && <div style={{ color: 'red' }}>{error}</div>} {/* Affichage du message d'erreur */}
             <input
                 type={'text'}

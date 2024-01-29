@@ -20,9 +20,9 @@ const Home = () => {
                 className={'color-teal'}
                 href={'https://github.com/BenjaminG95/React-Sandbox/tree/main'}
                 target={"_blank"} rel="noreferrer"
-            > sur le dépôt GitHub</a> dans le dossier src puis <a
+            > sur le dépôt GitHub</a> dans le dossier src/components puis <a
                 className={'color-teal'}
-                href={'https://github.com/BenjaminG95/React-Sandbox/tree/main/src/examples'}
+                href={'https://github.com/BenjaminG95/React-Sandbox/tree/main/src/components/examples'}
                 target={"_blank"} rel="noreferrer"
             > examples
             </a><br/>
