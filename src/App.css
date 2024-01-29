@@ -189,7 +189,7 @@
 }
 
 
-.flex-start{
+.flex-start {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -276,7 +276,7 @@
 }
 
 .footer-text {
-font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 .footer .container {
@@ -290,6 +290,7 @@ font-size: 1.2em;
 
 .footer .social-links {
     margin-top: 10px;
+    font-size: 1.5em;
 }
 
 .footer .social-links a {
