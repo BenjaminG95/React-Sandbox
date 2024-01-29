@@ -10,6 +10,7 @@
     --alert-color: #ffc107;
     --alert-hover-color: #d39e00;
     --teal-color: #61DAFB;
+    --teal-hover-color: #4db6e2;
     --info-color: #17a2b8;
     --info-hover-color: #0e6270;
     --warning-color: #fd7e14;
@@ -18,6 +19,8 @@
     --pink-color-hover: #da4987;
     --dark-blue-color: #60a1fc;
     --dark-blue-color-hover: #5d93da;
+    --dark-purple-color: #a464f2;
+    --dar-purple-hover-color: #8e4bd9;
     --text-small-size: 0.8em;
     --btn-font-size: 1em;
     --btn-padding: 0.7em;
@@ -107,6 +110,14 @@
 
 .btn-light-blue:hover {
     background-color: var(--dark-blue-color-hover);
+}
+
+.btn-dark-purple {
+    background-color: var(--dark-purple-color);
+}
+
+.btn-dark-purple:hover {
+    background-color: var(--dar-purple-hover-color);
 }
 
 .color-teal {
