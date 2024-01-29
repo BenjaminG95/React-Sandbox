@@ -9,7 +9,6 @@ function reactRouterExample () : JSX.Element {
             <Link className={'btn btn-light-blue decoration-none'} to={'routerExample'} >
                 Utiliser React Router
             </Link>
-
         </div>
     </>);
 }
