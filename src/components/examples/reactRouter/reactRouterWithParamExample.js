@@ -23,7 +23,7 @@ function ReactRouterWithParamExample() {
         <div className={'flex-column flex-item'}>
             <h2>React Router</h2>
 
-            <button className={'btn btn-pink mt-2'} onClick={handleSubmit}>
+            <button className={'btn btn-pink'} onClick={handleSubmit}>
                 React Router avec Param
             </button>
             <a className={'color-teal text-small mt-2'}
