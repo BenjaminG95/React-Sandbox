@@ -71,7 +71,7 @@ function UseReducerExample(): JSX.Element {
                 </button>
             </div>
             <a className={'color-teal text-small my-2'}
-               href={'https://github.com/BenjaminG95/React-Sandbox/blob/main/src/examples/useReducerExample.js'}
+               href={'https://github.com/BenjaminG95/React-Sandbox/blob/main/src/components/examples/useReducer/useReducerExample.js'}
                target={"_blank"} rel="noreferrer">Code source de UseReducerExample</a>
             <p>Compteur : {state.count}</p>
             {/* Le composant UseReducerExample utilise un réducteur pour gérer l'état du compteur de manière plus structurée. */}

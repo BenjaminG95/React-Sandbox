@@ -52,7 +52,7 @@ function MemoExample(): JSX.Element {
                     className={'input text-small my-2 '}
                 />
                 <a className={'color-teal text-small mt-1'}
-                   href={'https://github.com/BenjaminG95/React-Sandbox/blob/main/src/examples/useMemoExample.js'}
+                   href={'https://github.com/BenjaminG95/React-Sandbox/blob/main/src/components/examples/useMemo/useMemoExample.js'}
                    target={"_blank"} rel="noreferrer">Code source de useMemoExample</a>
                 <p className={'text-small'}>
                     Longueur de la chaîne mémorisée : {memoizedValue}

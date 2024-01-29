@@ -68,7 +68,7 @@ function UseRefExample() : JSX.Element {
                 Utiliser useRef( )
             </button>
             <a className={'color-teal text-small mt-2'}
-               href={'https://github.com/BenjaminG95/React-Sandbox/blob/main/src/examples/useRefExample.js'}
+               href={'https://github.com/BenjaminG95/React-Sandbox/blob/main/src/components/examples/useRef/useRefExample.js'}
                target={"_blank"} rel="noreferrer">Code source de UseRefExemple</a>
             <p className={'text-small'}>
                 Cliquez sur le bouton pour mettre le focus sur
