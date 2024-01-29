@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+// TODO add more resources.
+
 const resources = [
     {"name": "React official documentation", "url": "https://react.dev/learn"},
     {"name": "React.js cheatsheet", "url": "https://devhints.io/react"},
@@ -8,9 +10,10 @@ const resources = [
     {"name": "Documentation Redux", "url": "https://redux.js.org/introduction/getting-started"},
     {"name": "Librairie Material UI", "url": "https://mui.com/material-ui/getting-started/"},
     {"name": "Librairie Ant Design", "url": "https://ant.design/docs/react/getting-started"},
+    {"name": "Environnement React online", "url": "https://playcode.io/react"},
+    {"name": "CodeWars sur React (exercices / challenges online)", "url": "https://www.codewars.com/collections/reactjs"},
 ];
 
-// TODO add more resources.
 
 function ReactResources() {
     const resourcesHtml = resources.map(resource => (
