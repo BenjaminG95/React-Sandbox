@@ -34,7 +34,7 @@
  * Règles d'Utilisation : Comme pour tous les Hooks, useEffect doit être appelé au niveau supérieur d'un composant fonctionnel ou d'un autre Hook personnalisé, et non à l'intérieur de boucles, conditions ou fonctions imbriquées.
  */
 
-import {useState, useEffect} from "react";
+import React, {useState, useEffect} from "react";
 
 function EffectExample() {
     // utilisation de useState pour créer une variable d'état 'count' initialisée à 0

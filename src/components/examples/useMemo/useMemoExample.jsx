@@ -26,7 +26,7 @@
  * Abuser de useMemo peut entraîner une surconsommation de mémoire et des performances réduites dans certains cas.
  */
 
-import { useState, useMemo } from 'react';
+import React, { useState, useMemo } from 'react';
 
 function MemoExample() {
     // utilisation de useState pour créer une variable d'état 'input' initialisée à une chaîne vide

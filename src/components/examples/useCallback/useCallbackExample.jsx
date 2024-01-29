@@ -40,7 +40,7 @@
  *
  */
 
-import {useState, useCallback} from "react";
+import React, {useState, useCallback} from "react";
 
 // Composant enfant qui reçoit une fonction 'onAction' comme prop et affiche un bouton
 function ChildComponent({onAction})  {

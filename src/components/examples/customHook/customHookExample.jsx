@@ -59,7 +59,7 @@
  *  Voir https://fr.react.dev/learn/reusing-logic-with-custom-hooks pour plus d'informations.
  */
 
-import {useState, useCallback} from 'react';
+import React, {useState, useCallback} from 'react';
 
 // Hook personnalisé pour un compteur
 function useCounter(initialValue = 0) {

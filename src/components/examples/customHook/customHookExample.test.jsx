@@ -1,4 +1,5 @@
-import {fireEvent, render, screen} from "@testing-library/react"; // Importe les fonctions de test
+import React from "react";
+import { fireEvent, render, screen } from "@testing-library/react"; // Importe les fonctions de test
 import CustomHookExample from "./customHookExample"; // Importe le composant à tester
 
 describe('CustomHookExample Component', () => {
@@ -17,4 +18,4 @@ describe('CustomHookExample Component', () => {
         fireEvent.click(decrementButton); // Simule le clic sur le bouton "Décrémenter"
         expect(screen.getByText('Compteur : 0')).toBeInTheDocument(); // Vérifie si le texte "Compteur : 0" est présent dans le document
     });
-});
+})

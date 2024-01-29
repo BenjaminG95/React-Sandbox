@@ -1,3 +1,5 @@
+import React from "react";
+
 import {fireEvent, render, screen} from "@testing-library/react"; // Importe les fonctions de test
 import UseEffectExample from "./useEffectExample"; // Importe le composant à tester
 

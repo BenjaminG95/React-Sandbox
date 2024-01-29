@@ -42,7 +42,7 @@
  * performances en chargeant du code uniquement lorsque c'est nécessaire.
  *
  */
-
+import React from "react";
 import { Link } from "react-router-dom"; // Importer Link de react-router-dom
 
 function reactRouterExample ()  {

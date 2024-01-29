@@ -40,8 +40,7 @@
  *
  * Voir la documentation officielle : https://react.dev/learn/passing-props-to-a-component
  */
-
-import {useState} from "react";
+import React, {useState} from "react";
 
 // Composant enfant qui affiche le message et permet de le modifier
 function MessageDisplay({message, updateMessage}) {

@@ -40,7 +40,7 @@
  * fonctionnels de React, offrant une flexibilité et une expressivité accrues pour le
  * développement d'applications interactives.
  */
-import {useState} from "react";
+import React, {useState} from "react";
 
 // Nous allons créer une fonction qui va incrémenter un compteur à chaque clique sur un bouton
 // cette dernière utilisera le Hook useState
