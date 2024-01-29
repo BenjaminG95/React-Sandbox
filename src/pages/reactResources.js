@@ -10,11 +10,14 @@ const resources = [
     {"name": "Documentation Redux", "url": "https://redux.js.org/introduction/getting-started"},
     {"name": "Librairie Material UI", "url": "https://mui.com/material-ui/getting-started/"},
     {"name": "Librairie Ant Design", "url": "https://ant.design/docs/react/getting-started"},
+    {"name": "Librairie Tailwind", "url": "https://tailwindcss.com/docs/guides/create-react-app"},
+    {"name": "Cheatsheet Tailwind", "url": "https://nerdcave.com/tailwind-cheat-sheet"},
     {"name": "Environnement React online", "url": "https://playcode.io/react"},
     {"name": "CodeWars sur React (exercices / challenges online)", "url": "https://www.codewars.com/collections/reactjs"},
     {"name": "Des challenges sur React", "url": "https://github.com/alexgurr/react-coding-challenges"},
+    {"name": "Vidéo d'intro a nextJS (en anglais)", "url": "https://www.youtube.com/watch?v=ZVnjOPwW4ZA"},
+    {"name": "React Query", "url": "https://tanstack.com/query/v4/docs/framework/react/overview"},
 ];
-
 function ReactResources() {
     const resourcesHtml = resources.map(resource => (
         <li key={resource.name}>
