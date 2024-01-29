@@ -5,7 +5,7 @@ import Header from "./layouts/header"; // import du composant header
 import Home from "./pages/home";
 import Footer from "./layouts/footer";
 import ReactRouterExample from "./pages/reactRouterExample";
-import ReatRouterWithParamExample from "./pages/reactRouterWithParamExample"; // import du composant main
+import ReactRouterWithParamExample from "./pages/reactRouterWithParamExample"; // import du composant main
 
 // fonction principale de l'application
 function App() {
@@ -23,7 +23,7 @@ function App() {
                     {/* Route pour la page de démonstration de React Router, Lorsque l'URL correspond à
                     '/routerExample', le composant RouterExample est rendu */}
                     <Route path="/routerExample" element={<ReactRouterExample/>}/>
-                    <Route path="/routerExample/:param" element={<ReatRouterWithParamExample/>}/>
+                    <Route path="/routerExample/:param" element={<ReactRouterWithParamExample/>}/>
                 </Routes>
                 <Footer/>
             </div>

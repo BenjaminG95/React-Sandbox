@@ -40,7 +40,7 @@
 
 import React, {useRef} from "react";
 
-function UseRefExample() : JSX.Element {
+function UseRefExample(): JSX.Element {
     // Créez une référence pour un élément du DOM
     // useRef() renvoie un objet mutable avec une propriété current initialement définie sur la valeur passée en argument (initialValue).
     // La valeur renvoyée par useRef sera persistante pendant toute la durée de vie du composant.
@@ -74,7 +74,11 @@ function UseRefExample() : JSX.Element {
                 Cliquez sur le bouton pour mettre le focus sur
                 <br/>le champ de texte et ajouter la value "Hello World".
             </p>
-            <input ref={inputRef} className={'text-small mt-2'} type="text"/>
+            <input ref={inputRef}
+                   className={'text-small mt-2'}
+                   type="text"
+                   placeholder={'Appuyez sur le bouton'}
+                   disabled={true}/>
         </div>
     </>);
 }

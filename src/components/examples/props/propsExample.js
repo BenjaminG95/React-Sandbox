@@ -41,10 +41,10 @@
  * Voir la documentation officielle : https://react.dev/learn/passing-props-to-a-component
  */
 
-import { useState } from "react";
+import {useState} from "react";
 
 // Composant enfant qui affiche le message et permet de le modifier
-function MessageDisplay({ message, updateMessage }): JSX.Element {
+function MessageDisplay({message, updateMessage}): JSX.Element {
     const [newMessage, setNewMessage] = useState(""); // État local pour stocker le nouveau message saisi
 
     const handleInputChange = (e): void => {
@@ -60,13 +60,24 @@ function MessageDisplay({ message, updateMessage }): JSX.Element {
     return (
         <div className={'flex-column'}>
             <h2>Les props</h2>
-            <button className={'btn btn-alert'} onClick={handleSubmit}>Utiliser les props</button>
+            <button className={'btn btn-alert'}
+                    onClick={handleSubmit}>
+                Utiliser les props
+            </button>
             <a className={'color-teal text-small mt-2 '}
                href={'https://github.com/BenjaminG95/React-Sandbox/blob/main/src/components/examples/props/propsExample.js'}
-               target={"_blank"} rel="noreferrer">Code source de propsExample</a>
-            <p className={'text-small'}> Remplissez l'input et appuyez sur le bouton pour modifier le texte.</p>
-            <input type="text" className={'text-small '} value={newMessage} onChange={handleInputChange} />
-
+               target={"_blank"}
+               rel="noreferrer">
+                Code source de propsExample
+            </a>
+            <p className={'text-small'}>
+                Remplissez l'input et appuyez sur le bouton pour modifier le texte.
+            </p>
+            <input type="text"
+                   className={'text-small '}
+                   value={newMessage}
+                   onChange={handleInputChange}
+                   placeholder={'Entrez une propriété'}/>
             <p className={'text-small'}>Message: {message}</p>
         </div>
     );
@@ -84,7 +95,7 @@ function PropsExample(): JSX.Element {
     // Afficher le composant enfant avec le message et la fonction de mise à jour du message
     return (
         <div className={'flex-column flex-item'}>
-            <MessageDisplay message={message} updateMessage={changeMessage} />
+            <MessageDisplay message={message} updateMessage={changeMessage}/>
         </div>
     );
 }
