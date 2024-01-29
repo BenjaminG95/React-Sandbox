@@ -64,7 +64,7 @@ function MessageDisplay({message, updateMessage}) {
                 Utiliser les props
             </button>
             <a className={'color-teal text-small mt-2 '}
-               href={'https://github.com/BenjaminG95/React-Sandbox/blob/main/src/components/examples/props/propsExample.js'}
+               href={'https://github.com/BenjaminG95/React-Sandbox/blob/main/src/components/examples/props/propsExample.jsx'}
                target={"_blank"}
                rel="noreferrer">
                 Code source de propsExample

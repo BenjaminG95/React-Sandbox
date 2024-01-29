@@ -8,9 +8,9 @@ function ReactRouterExample() {
             <h2>Exemple de React Router</h2>
             <p className={'text-small'}>Cette page est un exemple de la façon d'utiliser React Router dans une application React.</p>
             <a className={'color-teal text-small my-2'}
-               href={'https://github.com/BenjaminG95/React-Sandbox/blob/main/src/pages/reactRouterExample.js'}
+               href={'https://github.com/BenjaminG95/React-Sandbox/blob/main/src/pages/reactRouterExample.jsx'}
                target={"_blank"}
-               rel="noreferrer">Code source de la page reactRouterExample.js</a>
+               rel="noreferrer">Code source de la page reactRouterExample.jsx</a>
             <div className="navigation-links">
                 <Link to="/" className={'color-teal text-small'}>Retour à l'Accueil</Link>
             </div>

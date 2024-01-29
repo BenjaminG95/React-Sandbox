@@ -53,7 +53,7 @@ function MemoExample() {
                     placeholder={'Écrivez un message'}
                 />
                 <a className={'color-teal text-small mt-1'}
-                   href={'https://github.com/BenjaminG95/React-Sandbox/blob/main/src/components/examples/useMemo/useMemoExample.js'}
+                   href={'https://github.com/BenjaminG95/React-Sandbox/blob/main/src/components/examples/useMemo/useMemoExample.jsx'}
                    target={"_blank"}
                    rel="noreferrer">Code source de useMemoExample</a>
                 <p className={'text-small'}>
