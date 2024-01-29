@@ -29,9 +29,9 @@ L'application se lancera dans votre navigateur par défaut à l'adresse : `local
 Vous pouvez voir l'application en live ici: [https://benjaming95.github.io/React-Sandbox](https://benjaming95.github.io/React-Sandbox/)
 
 # Utilisation
-Consultez les fichiers contenus dans le dossier `src` puis `examples` pour voir les différents composants et leurs utilisations.
+Consultez les fichiers contenus dans le dossier `src`, `components` puis `examples` pour voir les différents composants et leurs utilisations.
 
-Vous pouvez également consulter le fichier de test `App.test.js` situé dans le dossier `src`
+Vous pouvez également consulter les fichiers de tests contenu dans le dossier de son composant respectif.
 
 Pour lancer les tests, utiliser la commande `npm test` dans votre terminal.
 
