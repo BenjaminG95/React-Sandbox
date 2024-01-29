@@ -28,7 +28,7 @@
 
 import { useState, useMemo } from 'react';
 
-function MemoExample(): JSX.Element {
+function MemoExample() {
     // utilisation de useState pour créer une variable d'état 'input' initialisée à une chaîne vide
     const [input, setInput] = useState('');
 
@@ -38,7 +38,7 @@ function MemoExample(): JSX.Element {
         return input.length;
     }, [input]); // La mémorisation est recalculée uniquement si 'input' change.
 
-    function handleInputChange(e: React.ChangeEvent<HTMLInputElement>): void {
+    function handleInputChange(e) {
         setInput(e.target.value);
     }
 

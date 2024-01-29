@@ -52,7 +52,7 @@ function reducer(state, action) {
 }
 
 // Composant qui utilise useReducer
-function UseReducerExample(): JSX.Element {
+function UseReducerExample() {
     // Utilisation de useReducer
     const [state, dispatch] = useReducer(reducer, initialState);
 

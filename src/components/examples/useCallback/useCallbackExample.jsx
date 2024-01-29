@@ -43,7 +43,7 @@
 import {useState, useCallback} from "react";
 
 // Composant enfant qui reçoit une fonction 'onAction' comme prop et affiche un bouton
-function ChildComponent({onAction}): JSX.Element  {
+function ChildComponent({onAction})  {
     console.log("Rendu de ChildComponent");
     return <button className={'btn btn-success'}
                    onClick={onAction}>Utiliser useCallback( )
@@ -51,13 +51,13 @@ function ChildComponent({onAction}): JSX.Element  {
 }
 
 // Composant parent qui utilise le hook 'useCallback'
-function UseCallbackExample(): JSX.Element  {
+function UseCallbackExample()  {
     // 'count' est une variable d'état qui garde le compte des clics
     const [count, setCount] = useState(0);
 
     // 'incrementCount' est une fonction mémorisée qui incrémente 'count'
     // useCallback s'assure que cette fonction n'est recréée que si les dépendances (ici, []) changent
-    const incrementCount = useCallback((): void => {
+    const incrementCount = useCallback(() => {
         setCount(c => c + 1); // Incrémente 'count' de 1
     }, []); // Dépendances vides : la fonction ne sera recréée que lors du premier rendu
 

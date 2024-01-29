@@ -36,7 +36,7 @@
 
 import {useState, useEffect} from "react";
 
-function EffectExample(): JSX.Element {
+function EffectExample() {
     // utilisation de useState pour créer une variable d'état 'count' initialisée à 0
     // voir useStateExamples.js pour plus d'informations sur useState
     const [count, setCount] = useState(0);
@@ -60,7 +60,7 @@ function EffectExample(): JSX.Element {
         };
     }, [count]); // L'effet s'exécute uniquement si 'count' change.
 
-    function incrementCount(): void {
+    function incrementCount() {
         setCount(count + 1);
     }
 

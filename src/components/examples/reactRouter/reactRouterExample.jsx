@@ -45,7 +45,7 @@
 
 import { Link } from "react-router-dom"; // Importer Link de react-router-dom
 
-function reactRouterExample () : JSX.Element {
+function reactRouterExample ()  {
     return (<>
         <div className={'flex-column flex-item'}>
             <h2>React Router</h2>

@@ -40,14 +40,14 @@
 
 import React, {useRef} from "react";
 
-function UseRefExample(): JSX.Element {
+function UseRefExample() {
     // Créez une référence pour un élément du DOM
     // useRef() renvoie un objet mutable avec une propriété current initialement définie sur la valeur passée en argument (initialValue).
     // La valeur renvoyée par useRef sera persistante pendant toute la durée de vie du composant.
     const inputRef = useRef(null);
 
     // Fonction pour se concentrer sur l'input lorsque le bouton est cliqué
-    function focusOnInputAndSetValue(): void {
+    function focusOnInputAndSetValue() {
         // Accès direct à l'élément du DOM et mise au point sur celui-ci
         // inputRef.current est l'élément du DOM
 

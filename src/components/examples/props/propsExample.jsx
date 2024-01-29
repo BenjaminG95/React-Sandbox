@@ -44,14 +44,14 @@
 import {useState} from "react";
 
 // Composant enfant qui affiche le message et permet de le modifier
-function MessageDisplay({message, updateMessage}): JSX.Element {
+function MessageDisplay({message, updateMessage}) {
     const [newMessage, setNewMessage] = useState(""); // État local pour stocker le nouveau message saisi
 
-    const handleInputChange = (e): void => {
+    const handleInputChange = (e) => {
         setNewMessage(e.target.value); // Mettre à jour l'état local avec le texte saisi
     };
 
-    const handleSubmit = (): void => {
+    const handleSubmit = () => {
         updateMessage(newMessage); // Appeler la fonction de mise à jour avec le nouveau message
         setNewMessage(""); // Réinitialiser le champ de saisie
     };
@@ -84,11 +84,11 @@ function MessageDisplay({message, updateMessage}): JSX.Element {
 }
 
 // Composant parent qui contient le message et la fonction de mise à jour du message
-function PropsExample(): JSX.Element {
+function PropsExample() {
     const [message, setMessage] = useState("Message initial"); // État local pour stocker le message
 
     // Fonction de mise à jour du message
-    const changeMessage = (newMessage): void => {
+    const changeMessage = (newMessage) => {
         setMessage(newMessage);
     };
 

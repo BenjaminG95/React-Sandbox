@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom";
 
-function reactResources(): JSX.Element {
+function reactResources() {
     return (<>
         <div className={'flex-item'}>
             <h2 className={'my-2'}>Ressources React</h2>
