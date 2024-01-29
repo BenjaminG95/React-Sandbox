@@ -50,10 +50,12 @@ function MemoExample(): JSX.Element {
                     value={input}
                     onChange={handleInputChange}
                     className={'input text-small my-2 '}
+                    placeholder={'Écrivez un message'}
                 />
                 <a className={'color-teal text-small mt-1'}
                    href={'https://github.com/BenjaminG95/React-Sandbox/blob/main/src/components/examples/useMemo/useMemoExample.js'}
-                   target={"_blank"} rel="noreferrer">Code source de useMemoExample</a>
+                   target={"_blank"}
+                   rel="noreferrer">Code source de useMemoExample</a>
                 <p className={'text-small'}>
                     Longueur de la chaîne mémorisée : {memoizedValue}
                 </p>

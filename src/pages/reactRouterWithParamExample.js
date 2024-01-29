@@ -2,7 +2,7 @@
 
 import {Link, useParams} from 'react-router-dom';
 
-function ReatRouterWithParamExample() {
+function ReactRouterWithParamExample() {
     const {param} = useParams();
 
     return (
@@ -17,4 +17,4 @@ function ReatRouterWithParamExample() {
     );
 }
 
-export default ReatRouterWithParamExample;
+export default ReactRouterWithParamExample;
