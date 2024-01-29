@@ -12,7 +12,7 @@ const resources = [
     {"name": "Librairie Ant Design", "url": "https://ant.design/docs/react/getting-started"},
     {"name": "Environnement React online", "url": "https://playcode.io/react"},
     {"name": "CodeWars sur React (exercices / challenges online)", "url": "https://www.codewars.com/collections/reactjs"},
-    {"name": "Des challenges sur React", "url": "https://reactchallenges.live/"},
+    {"name": "Des challenges sur React", "url": "https://github.com/alexgurr/react-coding-challenges"},
 ];
 
 function ReactResources() {
