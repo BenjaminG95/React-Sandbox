@@ -32,7 +32,7 @@
  * Voir https://fr.react.dev/reference/react/useReducer pour plus d'informations.
  */
 
-import React, {useReducer} from 'react';
+import {useReducer} from 'react';
 
 // Définition de l'état initial
 const initialState = {count: 0};

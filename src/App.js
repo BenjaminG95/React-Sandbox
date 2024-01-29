@@ -1,53 +1,37 @@
 import './App.css';
-import logo from './logo.svg';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'; // import du router pour la navigation
 
-import UseStateExample from './examples/useStateExample/useStateExample';
-import UseEffectExample from "./examples/useEffectExample/useEffectExample";
-import UseRefExample from "./examples/useRefExample/useRefExample";
-import UseCallbackExample from "./examples/useCallbackExample/useCallbackExample";
-import PropsExample from "./examples/propsExample/propsExample";
-import MemoExample from "./examples/useMemoExample/useMemoExample";
-import UseContextExample from "./examples/useContextExample/useContextExample";
-import UseReducerExample from "./examples/useReducerExample/useReducerExample";
-import CustomHookExample from "./examples/customHookExample/customHookExample";
+import Header from "./layouts/header"; // import du composant header
+import Home from "./pages/home";
+import Footer from "./layouts/footer";
+import ReactRouterExample from "./pages/reactRouterExample";
+import ReatRouterWithParamExample from "./pages/reactRouterWithParamExample"; // import du composant main
 
+// fonction principale de l'application
 function App() {
-    return (<div className={'App'}>
-        <header className={'App-header'}>
-            <h1> React Sandbox </h1>
-        </header>
-        <main className={'App-main'}>
-            <img src={logo} className="App-logo" alt="logo"/>
-            <p className={'text-small'}>
-                Les fichiers avec les informations concernant ces méthodes sont disponibles <a
-                className={'color-teal'}
-                href={'https://github.com/BenjaminG95/React-Sandbox/tree/main'}
-                target={"_blank"} rel="noreferrer"
-            >
-                sur le dépôt GitHub</a> dans le dossier src puis <a
-                className={'color-teal'}
-                href={'https://github.com/BenjaminG95/React-Sandbox/tree/main/src/examples'}
-                target={"_blank"} rel="noreferrer"
-            >   examples
-                </a><br/>
-                N'hésitez pas à cloner le dépôt et à tester les différentes méthodes. Amusez-vous à comprendre comment
-                elles fonctionnent!
-                <br/>
-                Have fun! 🤩🚀
-            </p>
-            <div className={'flex-container flex-evenly w-100'}>
-                <UseStateExample/>
-                <UseEffectExample/>
-                <UseCallbackExample/>
-                <UseRefExample/>
-                <MemoExample/>
-                <PropsExample/>
-                <UseReducerExample/>
-                <UseContextExample/>
-                <CustomHookExample/>
+    return (
+        // Utilisation du composant Router de React Router
+        <Router>
+            {/* Wrapper div avec la classe 'App' pour appliquer des styles globaux */}
+            <div className={'App'}>
+                {/* Le Header est inclus en haut de toutes les pages */}
+                <Header/>
+                {/* Configuration des Routes de l'application */}
+                <Routes>
+                    {/*route de la page d'accueil, Lorsque l'URL correspond à '/', le composant Home est rendu */}
+                    <Route path="/" element={<Home/>}/>
+                    {/* Route pour la page de démonstration de React Router, Lorsque l'URL correspond à
+                    '/routerExample', le composant RouterExample est rendu */}
+                    <Route path="/routerExample" element={<ReactRouterExample/>}/>
+                    <Route path="/routerExample/:param" element={<ReatRouterWithParamExample/>}/>
+                </Routes>
+                <Footer/>
             </div>
-        </main>
-    </div>);
+        </Router>
+    );
 }
 
-export default App;
+export default App; // export de la fonction principale
+// l'export sert à rendre la fonction accessible dans d'autres fichiers
+// ici, nous exportons la fonction App pour qu'elle soit accessible dans le fichier index.js
+// et pouvoir l'injecter dans le DOM.

@@ -29,7 +29,7 @@
  * le flux de données dans l'application difficile à suivre.
  */
 
-import React, { useState, useContext, createContext } from 'react';
+import { useState, useContext, createContext } from 'react';
 
 // Création d'un contexte de thème
 export const ThemeContext = createContext('light');
@@ -62,7 +62,7 @@ function UseContextExample(): JSX.Element {
         <ThemeContext.Provider value={theme}>
             <div className="flex-column flex-item">
                 <h2>UseContext( )</h2>
-                <button className={'btn btn-primary'} onClick={toggleTheme}>
+                <button className={'btn btn-warning'} onClick={toggleTheme}>
                     Utiliser UseContext( )
                 </button>
                 <a className={'color-teal text-small my-2'}
