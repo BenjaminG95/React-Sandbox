@@ -1,5 +1,5 @@
 import './App.css';
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'; // import du router pour la navigation
+import {Routes, Route, BrowserRouter} from 'react-router-dom'; // import du router pour la navigation
 
 import Header from "./layouts/header"; // import du composant header
 import Home from "./pages/home";
@@ -11,7 +11,7 @@ import ReatRouterWithParamExample from "./pages/reactRouterWithParamExample"; //
 function App() {
     return (
         // Utilisation du composant Router de React Router
-        <Router>
+        <BrowserRouter basename={'/React-Sandbox'}>
             {/* Wrapper div avec la classe 'App' pour appliquer des styles globaux */}
             <div className={'App'}>
                 {/* Le Header est inclus en haut de toutes les pages */}
@@ -27,7 +27,7 @@ function App() {
                 </Routes>
                 <Footer/>
             </div>
-        </Router>
+        </BrowserRouter>
     );
 }
 
