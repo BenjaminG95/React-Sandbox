@@ -1,5 +1,5 @@
 // voir components/ReactRouterExample.js pour plus d'explications
-
+import React from "react";
 import {Link, useParams} from 'react-router-dom';
 
 function ReactRouterWithParamExample() {

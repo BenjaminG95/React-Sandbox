@@ -1,6 +1,6 @@
 // voir components/ReactRouterExample.js pour plus d'explications
 
-import { useState } from "react"; // Importation de useState pour gérer les états
+import React, { useState } from "react"; // Importation de useState pour gérer les états
 import { useNavigate } from "react-router-dom"; // Importation du hook useNavigate pour la navigation programmée
 
 function ReactRouterWithParamExample() {

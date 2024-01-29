@@ -1,6 +1,7 @@
+import React from "react";
 import { render, screen, fireEvent } from '@testing-library/react'; // Permet de rendre le composant
 import { BrowserRouter } from 'react-router-dom'; // Permet de créer un routeur
-import ReactRouterWithParamExample from './ReactRouterWithParamExample'; // Composant à tester
+import ReactRouterWithParamExample from './reactRouterWithParamExample'; // Composant à tester
 
 // Helper pour rendre le composant au sein d'un routeur
 const renderWithRouter = (ui, { route = '/' } = {}) => {

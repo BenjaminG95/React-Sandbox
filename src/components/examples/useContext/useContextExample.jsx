@@ -1,3 +1,4 @@
+import React from "react";
 /**
  * useContext est un Hook dans React qui permet d'accéder à la valeur du contexte de React
  * sans avoir à utiliser un Consumer. Le contexte est un moyen de passer des données à travers
