@@ -22,7 +22,7 @@ Dans votre terminal, placé à l'endroit où vous stockez vos projets ( souvent 
 Dans votre terminal, placé dans le projet, tapez la commande : `npm i`
 
 ### Démarrez l'application :
-Dans votre terminal, placé dans le projet, tapez la commande : `npm start`
+Dans votre terminal, placé dans le projet, tapez la commande : `npm run dev`
 
 L'application se lancera dans votre navigateur par défaut à l'adresse : `http://localhost:3000/React-Sandbox`
 
