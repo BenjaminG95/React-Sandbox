@@ -1,7 +1,7 @@
 // voir components/ReactRouterExample.jsx pour plus d'explications
 
-import React, { useState } from "react"; // Importation de useState pour gérer les états
-import { useNavigate } from "react-router-dom"; // Importation du hook useNavigate pour la navigation programmée
+import React, {useState} from "react"; // Importation de useState pour gérer les états
+import {useNavigate} from "react-router-dom"; // Importation du hook useNavigate pour la navigation programmée
 
 function ReactRouterWithParamExample() {
     const [param, setParam] = useState(""); // État pour stocker la valeur saisie
@@ -20,21 +20,22 @@ function ReactRouterWithParamExample() {
     };
 
     return (<>
-        <div className={'flex-column flex-item'}>
-            <h2>React Router</h2>
-            <button className={'btn btn-pink'} onClick={handleSubmit}>
-                React Router avec Param
-            </button>
-            <a className={'color-teal text-small mt-2'}
-               href={'https://github.com/BenjaminG95/React-Sandbox/blob/main/src/components/examples/reactRouter/reactRouterWithParamExample.jsx'}
-               target={"_blank"} rel="noreferrer">Code source de reactRouterWithParamExample</a>
-            <a className={'color-teal text-small mt-2'}
-               href={'https://github.com/BenjaminG95/React-Sandbox/blob/main/src/App.js'}
-               target={"_blank"} rel="noreferrer">Code source de app.js</a>
-            {error && <div style={{ color: 'red' }}>{error}</div>} {/* Affichage du message d'erreur */}
+        <div className="flex flex-col items-center justify-center bg-gradient-to-r
+         from-purple-800 to-emerald-800 rounded-lg p-6 shadow-lg text-white transition
+          duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl">
+            <h2 className="text-2xl font-bold">React Router avec Param</h2>
+            <a className="text-cyan-300 hover:text-indigo-800 text-sm mt-4"
+               href="https://github.com/BenjaminG95/React-Sandbox/blob/main/src/components/examples/reactRouter/reactRouterWithParamExample.jsx"
+               target="_blank" rel="noreferrer">Code source de reactRouterWithParamExample</a>
+            <a className="text-cyan-300 hover:text-indigo-800 text-sm mt-4"
+               href="https://github.com/BenjaminG95/React-Sandbox/blob/main/src/App.jsx"
+               target="_blank" rel="noreferrer">Code source de app.js</a>
+            {error && <div className="text-red-500 mt-4">{error}</div>}
             <input
-                type={'text'}
-                className={'text-small mt-2'}
+                type="text"
+                className="mt-4 block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white
+                bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0
+                focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                 value={param}
                 onChange={(e) => {
                     setParam(e.target.value);
@@ -42,6 +43,10 @@ function ReactRouterWithParamExample() {
                 }}
                 placeholder="Entrez un paramètre"
             />
+            <button className="bg-cyan-400 hover:bg-cyan-600 text-white font-bold py-2 px-4 rounded mt-4"
+                    onClick={handleSubmit}>
+                React Router avec Param
+            </button>
         </div>
     </>);
 }

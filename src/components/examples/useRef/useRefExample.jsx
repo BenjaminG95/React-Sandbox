@@ -62,23 +62,26 @@ function UseRefExample() {
     }
 
     return (<>
-        <div className={'flex-column flex-item'}>
-            <h2>UseRef( )</h2>
-            <button className={'btn btn-info'} onClick={focusOnInputAndSetValue}>
-                Utiliser useRef( )
-            </button>
-            <a className={'color-teal text-small mt-2'}
-               href={'https://github.com/BenjaminG95/React-Sandbox/blob/main/src/components/examples/useRef/useRefExample.jsx'}
-               target={"_blank"} rel="noreferrer">Code source de UseRefExemple</a>
-            <p className={'text-small'}>
+        <div className="flex flex-col items-center justify-center bg-gradient-to-r from-red-700 to-orange-500 rounded-lg p-6 shadow-lg text-white transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl">
+            <h2 className="text-2xl font-bold">UseRef()</h2>
+
+            <a className="text-cyan-300 hover:text-indigo-800 text-sm mt-5"
+               href="https://github.com/BenjaminG95/React-Sandbox/blob/main/src/components/examples/useRef/useRefExample.jsx"
+               target="_blank" rel="noreferrer">Code source de UseRefExample</a>
+            <p className="text-sm mt-4">
                 Cliquez sur le bouton pour mettre le focus sur
                 <br/>le champ de texte et ajouter la value "Hello World".
             </p>
             <input ref={inputRef}
-                   className={'text-small mt-2'}
+                   className="text-sm mt-4"
                    type="text"
-                   placeholder={'Appuyez sur le bouton'}
+                   placeholder="Appuyez sur le bouton"
                    disabled={true}/>
+             <button className="bg-cyan-400 hover:bg-cyan-600 text-white font-bold py-2 px-4 rounded mt-4"
+                    onClick={focusOnInputAndSetValue}
+            >
+                Utiliser useRef()
+            </button>
         </div>
     </>);
 }
