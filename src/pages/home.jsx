@@ -31,8 +31,8 @@ const Home = () => {
                 Have fun! 🤩🚀
             </p>
             </div>
-            <div className="flex justify-center">
-                <div className="grid lg:grid-cols-4 gap-4 w-full place-content-center md:grid-cols-2 sm:grid-cols-1">
+            <div className="flex justify-center ">
+                <div className="grid gap-4 w-full place-content-center sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-5">
                     <UseStateExample/>
                     <UseEffectExample/>
                     <UseCallbackExample/>
