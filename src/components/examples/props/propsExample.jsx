@@ -57,7 +57,8 @@ function MessageDisplay({message, updateMessage}) {
 
     // Afficher le message et le champ de saisie avec le bouton pour modifier le message
     return (<>
-        <div className="flex flex-col items-center justify-center bg-gradient-to-r from-emerald-600 to-indigo-600 rounded-lg p-6 shadow-lg text-white transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl">
+        <div
+            className="flex flex-col items-center justify-center bg-gradient-to-r from-emerald-600 to-indigo-600 rounded-lg p-6 shadow-lg text-white transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl">
             <h2 className="text-2xl font-bold">Les props</h2>
             <a className="text-cyan-300 hover:text-indigo-800 text-sm mt-4"
                href="https://github.com/BenjaminG95/React-Sandbox/blob/main/src/components/examples/props/propsExample.jsx"
@@ -73,7 +74,7 @@ function MessageDisplay({message, updateMessage}) {
                    onChange={handleInputChange}
                    placeholder="Entrez une propriété"/>
             <p className="text-sm mt-4">Message: {message}</p>
-             <button className="bg-cyan-400 hover:bg-cyan-600 text-white font-bold py-2 px-4 rounded mt-4"
+            <button className="bg-cyan-400 hover:bg-cyan-600 text-white font-bold py-2 px-4 rounded mt-4"
                     onClick={handleSubmit}>
                 Utiliser les props
             </button>

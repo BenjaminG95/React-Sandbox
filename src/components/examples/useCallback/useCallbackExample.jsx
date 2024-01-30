@@ -54,7 +54,6 @@ function ChildComponent({ onAction }) {
     );
 }
 
-
 // Composant parent qui utilise le hook 'useCallback'
 function UseCallbackExample() {
     // 'count' est une variable d'état qui garde le compte des clics
@@ -77,7 +76,6 @@ function UseCallbackExample() {
                 Compteur actuel : {count}
             </p>
             <ChildComponent onAction={incrementCount}/>
-
             {/* Le ChildComponent reçoit 'incrementCount'.
                 Grâce à useCallback, 'incrementCount' garde la même référence à chaque rendu,
                 évitant ainsi des rendus inutiles du ChildComponent. */}
