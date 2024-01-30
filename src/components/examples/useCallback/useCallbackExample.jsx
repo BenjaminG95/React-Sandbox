@@ -43,15 +43,20 @@
 import React, {useState, useCallback} from "react";
 
 // Composant enfant qui reçoit une fonction 'onAction' comme prop et affiche un bouton
-function ChildComponent({onAction})  {
+function ChildComponent({ onAction }) {
     console.log("Rendu de ChildComponent");
-    return <button className={'btn btn-success'}
-                   onClick={onAction}>Utiliser useCallback( )
-    </button>;
+
+    return (
+        <button className="bg-cyan-400 hover:bg-cyan-600 text-white font-bold py-2 px-4 rounded mt-4"
+                onClick={onAction}>
+            Utiliser useCallback()
+        </button>
+    );
 }
 
+
 // Composant parent qui utilise le hook 'useCallback'
-function UseCallbackExample()  {
+function UseCallbackExample() {
     // 'count' est une variable d'état qui garde le compte des clics
     const [count, setCount] = useState(0);
 
@@ -62,15 +67,17 @@ function UseCallbackExample()  {
     }, []); // Dépendances vides : la fonction ne sera recréée que lors du premier rendu
 
     return (
-        <div className="flex-column flex-item">
-            <h2>UseCallback( )</h2>
-            <ChildComponent onAction={incrementCount}/>
-            <a className={'color-teal text-small mt-2'}
-               href={'https://github.com/BenjaminG95/React-Sandbox/blob/main/src/components/examples/useCallback/useCallbackExample.jsx'}
-               target={"_blank"} rel="noreferrer">Code source de UseCallbackExample</a>
-            <p className={'text-small'}>Chaque clique incrémente le compteur<br/>
+        <div className="flex flex-col items-center justify-center bg-gradient-to-r from-indigo-600 to-red-700 rounded-lg p-6 shadow-lg text-white transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl">
+            <h2 className="text-2xl font-bold">UseCallback()</h2>
+            <a className="text-cyan-300 hover:text-indigo-800 text-sm mt-4"
+               href="https://github.com/BenjaminG95/React-Sandbox/blob/main/src/components/examples/useCallback/useCallbackExample.jsx"
+               target="_blank" rel="noreferrer">Code source de UseCallbackExample</a>
+            <p className="text-sm mt-4">
+                Chaque clique incrémente le compteur<br/>
                 Compteur actuel : {count}
             </p>
+            <ChildComponent onAction={incrementCount}/>
+
             {/* Le ChildComponent reçoit 'incrementCount'.
                 Grâce à useCallback, 'incrementCount' garde la même référence à chaque rendu,
                 évitant ainsi des rendus inutiles du ChildComponent. */}

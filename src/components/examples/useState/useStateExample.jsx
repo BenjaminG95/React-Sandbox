@@ -109,21 +109,23 @@ function UseStateExample() {
     }
 
     return (<>
-        <div className="flex-column flex-item">
-            <h2>UseState( )</h2>
-            {/*Changez le nom de la fonction appelée dans le onClick pour tester les différentes méthodes*/}
-            <button className='btn btn-primary'
+        <div className="flex flex-col items-center justify-center bg-gradient-to-r from-emerald-600 to-teal-600 rounded-lg p-6 shadow-lg text-white transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl">
+            <h2 className="text-2xl font-bold">UseState()</h2>
+            {/* Changez le nom de la fonction appelée dans le onClick pour tester les différentes méthodes */}
+
+            <a className="text-cyan-300 hover:text-indigo-800 text-sm mt-4"
+               href="https://github.com/BenjaminG95/React-Sandbox/blob/main/src/components/examples/useState/useStateExample.jsx"
+               target="_blank" rel="noreferrer">Code source de useStateExample</a>
+            <p className="text-sm mt-4">Chaque clique incrémente le compteur <br/>
+                Compteur actuel : {count} <br/>
+            </p>
+             <button className="bg-cyan-400 hover:bg-cyan-600 text-white font-bold py-2 px-4 rounded mt-4"
                     onClick={incrementCountDirectWay}
             >
-               Utiliser useState( )
+                Utiliser useState()
             </button>
-            <a className={'color-teal text-small mt-2'}
-               href={'https://github.com/BenjaminG95/React-Sandbox/blob/main/src/components/examples/useState/useStateExample.jsx'}
-               target={"_blank"} rel="noreferrer">Code source de useStateExample</a>
-            <p className={'text-small'}>Chaque clique incrémente le compteur <br/>
-           Compteur actuel : {count} <br/>
-            </p>
         </div>
+
     </>);
 }
 

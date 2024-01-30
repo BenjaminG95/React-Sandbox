@@ -14,7 +14,7 @@ function App() {
         // Utilisation du composant Router de React Router
         <BrowserRouter basename={'/React-Sandbox'}>
             {/* Wrapper div avec la classe 'App' pour appliquer des styles globaux */}
-            <div className={'App'}>
+            <div className={'App bg-gray-100'}>
                 {/* Le Header est inclus en haut de toutes les pages */}
                 <Header/>
                 {/* Configuration des Routes de l'application */}

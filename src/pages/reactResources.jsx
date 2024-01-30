@@ -31,7 +31,7 @@ function ReactResources() {
     ));
 
     return (
-        <div className={'App-main'}>
+        <main className="min-h-screen flex flex-col items-center justify-center text-center">
             <h2>Ressources React</h2>
             <div>
                 <ul className={'decoration-none'}>
@@ -40,9 +40,9 @@ function ReactResources() {
             </div>
 
             <div className="navigation-links mt-2">
-                <Link to="/" className={'color-teal text-small'}>Retour à l'Accueil</Link>
+                <Link to="/" className={'text-cyan-300 hover:text-indigo-800 text-sm my-4'}>Retour à l'Accueil</Link>
             </div>
-        </div>
+        </main>
     );
 }
 export default ReactResources;

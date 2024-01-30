@@ -65,17 +65,22 @@ function EffectExample() {
     }
 
     return (<>
-        <div className={'flex-column flex-item'}>
-            <h2>UseEffect( )</h2>
-            <button className={'btn btn-secondary'} onClick={incrementCount}>
-                Utiliser useEffect( )
-            </button>
-            <a className={'color-teal text-small mt-2'}
-               href={'https://github.com/BenjaminG95/React-Sandbox/blob/main/src/components/examples/useEffect/useEffectExample.jsx'}
-               target={"_blank"} rel="noreferrer">Code source de UseEffectExample</a>
-            <p className={'text-small'}>Chaque clique incrémente le compteur, puis change le nom de l'onglet.<br/>
+        <div className="flex flex-col items-center justify-center bg-gradient-to-r from-teal-600
+        to-indigo-700 rounded-lg p-6 shadow-lg text-white transition duration-300 ease-in-out
+         hover:-translate-y-1 hover:shadow-2xl">
+            <h2 className="text-2xl font-bold">UseEffect()</h2>
+            <a className="text-cyan-300 hover:text-indigo-800 text-sm mt-4"
+               href="https://github.com/BenjaminG95/React-Sandbox/blob/main/src/components/examples/useEffect/useEffectExample.jsx"
+               target="_blank" rel="noreferrer">Code source de UseEffectExample</a>
+            <p className="text-sm mt-4">
+                Chaque clique incrémente le compteur, puis change le nom de l'onglet.<br/>
                 Compteur actuel : {count}
             </p>
+            <button className="bg-cyan-400 hover:bg-cyan-600 text-white font-bold py-2 px-4 rounded mt-4"
+                    onClick={incrementCount}
+            >
+                Utiliser useEffect()
+            </button>
         </div>
     </>);
 }

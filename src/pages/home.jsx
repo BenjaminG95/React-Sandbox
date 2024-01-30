@@ -14,38 +14,39 @@ import ReactResource from "../components/reactResources";
 
 const Home = () => {
     return (<>
-        <main className={'App-main'}>
-            <img src={logo} className="App-logo" alt="logo"/>
-            <p className={'text-small'}>
-                Les fichiers avec les informations concernant ces méthodes sont disponibles <a
-                className={'color-teal'}
-                href={'https://github.com/BenjaminG95/React-Sandbox/tree/main'}
-                target={"_blank"} rel="noreferrer"
-            > sur le dépôt GitHub</a> dans le dossier src/components puis <a
-                className={'color-teal'}
-                href={'https://github.com/BenjaminG95/React-Sandbox/tree/main/src/components/examples'}
-                target={"_blank"} rel="noreferrer"
-            > examples
-            </a><br/>
+        <main className="min-h-screen flex flex-col items-center justify-center ">
+            <img src={logo} className="animate-spin h-32 mt-10" alt="logo"/>
+            <div className="">
+                <p className="text-xl font-bold text-gray-800 mt-10 mb-16 text-center p-3">
+                    Les fichiers avec les informations concernant ces méthodes sont disponibles
+                    <a className="text-cyan-300 hover:text-indigo-800" href="https://github.com/BenjaminG95/React-Sandbox/tree/main"
+                target="_blank" rel="noreferrer"> sur le dépôt GitHub</a> dans le dossier src/components puis <br/><a
+                className="text-cyan-300 hover:text-indigo-800"
+                href="https://github.com/BenjaminG95/React-Sandbox/tree/main/src/components/examples"
+                target="_blank" rel="noreferrer"
+            > examples</a>.
                 N'hésitez pas à cloner le dépôt et à tester les différentes méthodes. Amusez-vous à
-                comprendre comment
-                elles fonctionnent!
+                comprendre comment elles fonctionnent!
                 <br/>
                 Have fun! 🤩🚀
             </p>
-            <div className={'flex-container flex-evenly w-100'}>
-                <UseStateExample/>
-                <UseEffectExample/>
-                <UseCallbackExample/>
-                <UseRefExample/>
-                <MemoExample/>
-                <PropsExample/>
-                <UseReducerExample/>
-                <UseContextExample/>
-                <CustomHookExample/>
-                <ReactRouterExample/>
-                <ReactRouterWithParamExample/>
-                <ReactResource/>
+            </div>
+            <div className="flex justify-center">
+                <div className="grid lg:grid-cols-4 gap-4 w-full place-content-center md:grid-cols-2 sm:grid-cols-1">
+                    <UseStateExample/>
+                    <UseEffectExample/>
+                    <UseCallbackExample/>
+                    <UseRefExample/>
+                    <MemoExample/>
+                    <PropsExample/>
+                    <UseContextExample/>
+
+                    <ReactRouterExample/>
+                    <ReactRouterWithParamExample/>
+                    <CustomHookExample/>
+                    <UseReducerExample/>
+                    <ReactResource/>
+                </div>
             </div>
         </main>
     </>)

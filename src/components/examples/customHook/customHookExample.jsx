@@ -75,24 +75,28 @@ function useCounter(initialValue = 0) {
 function CustomHookExample() {
     const {count, increment, decrement} = useCounter(); // Utilisation de useCounter
 
-    return (
-        <div className="flex-column flex-item">
-            <h2>Custom Hook</h2>
-            <div>
-                <button className={'btn btn-success'} onClick={increment}>
+    return (<>
+        <div className="flex flex-col items-center justify-center bg-gradient-to-r from-emerald-800 to-yellow-700 rounded-lg p-6 shadow-lg text-white transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl">
+
+            <h2 className="text-2xl font-bold">Custom Hook</h2>
+
+            <a className="text-cyan-300 hover:text-indigo-800 text-sm my-4"
+               href="https://github.com/BenjaminG95/React-Sandbox/blob/main/src/components/examples/customHook/customHookExample.jsx"
+               target="_blank" rel="noreferrer">Code source de customHookExample</a>
+            <p className="text-sm">Compteur : {count}</p>
+            <div className="mt-4">
+                <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mr-2"
+                        onClick={increment}>
                     Incrémenter
                 </button>
-                <button className={'btn btn-danger'} onClick={decrement}>
+                <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded ml-2"
+                        onClick={decrement}>
                     Décrémenter
                 </button>
             </div>
-            <a className={'color-teal text-small my-2'}
-               href={'https://github.com/BenjaminG95/React-Sandbox/blob/main/src/components/examples/customHook/customHookExample.jsx'}
-               target={"_blank"} rel="noreferrer">Code source de customHookExample</a>
-            <p>Compteur : {count}</p>
             {/* CustomHookExample utilise le Hook personnalisé 'useCounter' pour gérer l'état et la logique du compteur. */}
         </div>
-    );
+    </>);
 }
 
 export default CustomHookExample;
