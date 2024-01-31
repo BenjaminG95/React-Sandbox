@@ -32,7 +32,7 @@
  * Voir https://fr.react.dev/reference/react/useReducer pour plus d'informations.
  */
 
-import React, {useReducer} from 'react';
+import React, { useReducer } from 'react';
 
 // Définition de l'état initial
 const initialState = {count: 0};
@@ -56,31 +56,34 @@ function UseReducerExample() {
     // Utilisation de useReducer
     const [state, dispatch] = useReducer(reducer, initialState);
 
-    return (<>
-        <div className="flex flex-col items-center justify-center bg-gradient-to-r from-yellow-800 to-teal-500 rounded-lg p-6 shadow-lg text-white transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl space-y-10">
-        <h2 className="text-2xl font-bold">UseReducer()</h2>
-            {/* Lorsque l'utilisateur clique sur un bouton, dispatch est appelé avec une action correspondante. */}
-            {/* Le réducteur est appelé et renvoie un nouvel état. */}
-            {/* L'état est mis à jour et le composant est re-rendu. */}
-            <a className="text-cyan-300 hover:text-indigo-800 text-sm mb-2 mt-4"
-               href="https://github.com/BenjaminG95/React-Sandbox/blob/main/src/components/examples/useReducer/useReducerExample.jsx"
-               target="_blank" rel="noreferrer">Code source de UseReducerExample</a>
-            <p className="text-sm">Compteur : {state.count}</p>
-            <div className="mt-4 flex flex-col space-y-2">
-                <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
-                        onClick={() => dispatch({type: 'increment'})}
-                >
-                    Incrémenter
-                </button>
-                <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
-                        onClick={() => dispatch({type: 'decrement'})}
-                >
-                    Décrémenter
-                </button>
+    return (
+        <>
+            <div
+                className="flex flex-col items-center justify-center bg-gradient-to-r from-yellow-800 to-teal-500 rounded-lg p-6 shadow-lg text-white transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl space-y-10">
+                <h2 className="text-2xl font-bold">UseReducer()</h2>
+                {/* Lorsque l'utilisateur clique sur un bouton, dispatch est appelé avec une action correspondante. */ }
+                {/* Le réducteur est appelé et renvoie un nouvel état. */ }
+                {/* L'état est mis à jour et le composant est re-rendu. */ }
+                <a className="text-cyan-300 hover:text-indigo-800 text-sm mb-2 mt-4"
+                   href="https://github.com/BenjaminG95/React-Sandbox/blob/main/src/components/examples/useReducer/useReducerExample.jsx"
+                   target="_blank" rel="noreferrer">Code source de UseReducerExample</a>
+                <p className="text-sm">Compteur : { state.count }</p>
+                <div className="mt-4 flex flex-col space-y-2">
+                    <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+                            onClick={ () => dispatch({type: 'increment'}) }
+                    >
+                        Incrémenter
+                    </button>
+                    <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+                            onClick={ () => dispatch({type: 'decrement'}) }
+                    >
+                        Décrémenter
+                    </button>
+                </div>
+                {/* Le composant UseReducerExample utilise un réducteur pour gérer l'état du compteur de manière plus structurée. */ }
             </div>
-            {/* Le composant UseReducerExample utilise un réducteur pour gérer l'état du compteur de manière plus structurée. */}
-        </div>
-    </>);
+        </>
+    );
 }
 
 export default UseReducerExample;

@@ -38,7 +38,7 @@
  * https://la-cascade.io/articles/un-guide-visuel-des-references-en-javascript
  */
 
-import React, {useRef} from "react";
+import React, { useRef } from "react";
 
 function UseRefExample() {
     // Créez une référence pour un élément du DOM
@@ -61,29 +61,32 @@ function UseRefExample() {
         }
     }
 
-    return (<>
-        <div className="flex flex-col items-center justify-center bg-gradient-to-r from-red-700 to-orange-500 rounded-lg p-6 shadow-lg text-white transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl space-y-10">
-            <h2 className="text-2xl font-bold">UseRef()</h2>
+    return (
+        <>
+            <div
+                className="flex flex-col items-center justify-center bg-gradient-to-r from-red-700 to-orange-500 rounded-lg p-6 shadow-lg text-white transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl space-y-10">
+                <h2 className="text-2xl font-bold">UseRef()</h2>
 
-            <a className="text-cyan-300 hover:text-indigo-800 text-sm mt-5"
-               href="https://github.com/BenjaminG95/React-Sandbox/blob/main/src/components/examples/useRef/useRefExample.jsx"
-               target="_blank" rel="noreferrer">Code source de UseRefExample</a>
-            <p className="text-sm mt-4">
-                Cliquez sur le bouton pour mettre le focus sur
-                <br/>le champ de texte et ajouter la value "Hello World".
-            </p>
-            <input ref={inputRef}
-                   className="text-sm mt-4"
-                   type="text"
-                   placeholder="Appuyez sur le bouton"
-                   disabled={true}/>
-             <button className="bg-cyan-400 hover:bg-cyan-600 text-white font-bold py-2 px-4 rounded mt-4"
-                    onClick={focusOnInputAndSetValue}
-            >
-                Utiliser useRef()
-            </button>
-        </div>
-    </>);
+                <a className="text-cyan-300 hover:text-indigo-800 text-sm mt-5"
+                   href="https://github.com/BenjaminG95/React-Sandbox/blob/main/src/components/examples/useRef/useRefExample.jsx"
+                   target="_blank" rel="noreferrer">Code source de UseRefExample</a>
+                <p className="text-sm mt-4">
+                    Cliquez sur le bouton pour mettre le focus sur
+                    <br/>le champ de texte et ajouter la value "Hello World".
+                </p>
+                <input ref={ inputRef }
+                       className="text-sm mt-4"
+                       type="text"
+                       placeholder="Appuyez sur le bouton"
+                       disabled={ true }/>
+                <button className="bg-cyan-400 hover:bg-cyan-600 text-white font-bold py-2 px-4 rounded mt-4"
+                        onClick={ focusOnInputAndSetValue }
+                >
+                    Utiliser useRef()
+                </button>
+            </div>
+        </>
+    );
 }
 
 export default UseRefExample;

@@ -1,6 +1,6 @@
-import React from "react";
-import {fireEvent, render, screen} from "@testing-library/react"; // Importe les fonctions de test
-import UseReducerExample from "./useReducerExample"; // Importe le composant à tester
+import React                         from "react";
+import { fireEvent, render, screen } from "@testing-library/react"; // Importe les fonctions de test
+import UseReducerExample             from "./useReducerExample"; // Importe le composant à tester
 
 describe('UseReducerExample Component', () => {
     test('incrémenter et décrémenter le compteur', () => {
@@ -8,8 +8,8 @@ describe('UseReducerExample Component', () => {
         render(<UseReducerExample/>);
 
         // Trouver les boutons
-        const incrementButton = screen.getByRole('button', { name: 'Incrémenter' }); // Récupère le bouton "Incrémenter"
-        const decrementButton = screen.getByRole('button', { name: 'Décrémenter' }); // Récupère le bouton "Décrémenter"
+        const incrementButton = screen.getByRole('button', {name: 'Incrémenter'}); // Récupère le bouton "Incrémenter"
+        const decrementButton = screen.getByRole('button', {name: 'Décrémenter'}); // Récupère le bouton "Décrémenter"
 
         // Simuler des clics et vérifier la mise à jour de l'état
         fireEvent.click(incrementButton); // Simule le clic sur le bouton "Incrémenter"

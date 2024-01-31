@@ -40,7 +40,7 @@
  * fonctionnels de React, offrant une flexibilité et une expressivité accrues pour le
  * développement d'applications interactives.
  */
-import React, {useState} from "react";
+import React, { useState } from "react";
 
 // Nous allons créer une fonction qui va incrémenter un compteur à chaque clique sur un bouton
 // cette dernière utilisera le Hook useState
@@ -108,25 +108,28 @@ function UseStateExample() {
         // Loggez count et prevCount sur les différentes incrémentations pour voir les changements
     }
 
-    return (<>
-        <div className="flex flex-col items-center justify-center bg-gradient-to-r from-emerald-600 to-teal-600 rounded-lg p-6 shadow-lg text-white transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl space-y-10">
-            <h2 className="text-2xl font-bold">UseState()</h2>
-            {/* Changez le nom de la fonction appelée dans le onClick pour tester les différentes méthodes */}
+    return (
+        <>
+            <div
+                className="flex flex-col items-center justify-center bg-gradient-to-r from-emerald-600 to-teal-600 rounded-lg p-6 shadow-lg text-white transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl space-y-10">
+                <h2 className="text-2xl font-bold">UseState()</h2>
+                {/* Changez le nom de la fonction appelée dans le onClick pour tester les différentes méthodes */ }
 
-            <a className="text-cyan-300 hover:text-indigo-800 text-sm mt-4"
-               href="https://github.com/BenjaminG95/React-Sandbox/blob/main/src/components/examples/useState/useStateExample.jsx"
-               target="_blank" rel="noreferrer">Code source de useStateExample</a>
-            <p className="text-sm mt-4">Chaque clique incrémente le compteur <br/>
-                Compteur actuel : {count} <br/>
-            </p>
-             <button className="bg-cyan-400 hover:bg-cyan-600 text-white font-bold py-2 px-4 rounded mt-4"
-                    onClick={incrementCountDirectWay}
-            >
-                Utiliser useState()
-            </button>
-        </div>
+                <a className="text-cyan-300 hover:text-indigo-800 text-sm mt-4"
+                   href="https://github.com/BenjaminG95/React-Sandbox/blob/main/src/components/examples/useState/useStateExample.jsx"
+                   target="_blank" rel="noreferrer">Code source de useStateExample</a>
+                <p className="text-sm mt-4">Chaque clique incrémente le compteur <br/>
+                    Compteur actuel : { count } <br/>
+                </p>
+                <button className="bg-cyan-400 hover:bg-cyan-600 text-white font-bold py-2 px-4 rounded mt-4"
+                        onClick={ incrementCountDirectWay }
+                >
+                    Utiliser useState()
+                </button>
+            </div>
 
-    </>);
+        </>
+    );
 }
 
 export default UseStateExample;
