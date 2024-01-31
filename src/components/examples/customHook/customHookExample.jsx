@@ -76,18 +76,18 @@ function CustomHookExample() {
     const {count, increment, decrement} = useCounter(); // Utilisation de useCounter
 
     return (<>
-        <div className="flex flex-col items-center justify-center bg-gradient-to-r from-emerald-800 to-yellow-700 rounded-lg p-6 shadow-lg text-white transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl">
+        <div className="flex flex-col items-center justify-center bg-gradient-to-r from-emerald-800 to-yellow-700 rounded-lg p-6 shadow-lg text-white transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl space-y-10">
             <h2 className="text-2xl font-bold">Custom Hook</h2>
             <a className="text-cyan-300 hover:text-indigo-800 text-sm my-4"
                href="https://github.com/BenjaminG95/React-Sandbox/blob/main/src/components/examples/customHook/customHookExample.jsx"
                target="_blank" rel="noreferrer">Code source de customHookExample</a>
             <p className="text-sm">Compteur : {count}</p>
-            <div className="mt-4">
-                <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mr-2"
+            <div className="mt-4 flex flex-col  space-y-2">
+                <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
                         onClick={increment}>
                     Incrémenter
                 </button>
-                <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded ml-2"
+                <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
                         onClick={decrement}>
                     Décrémenter
                 </button>

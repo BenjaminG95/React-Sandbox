@@ -62,7 +62,7 @@ function UseRefExample() {
     }
 
     return (<>
-        <div className="flex flex-col items-center justify-center bg-gradient-to-r from-red-700 to-orange-500 rounded-lg p-6 shadow-lg text-white transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl">
+        <div className="flex flex-col items-center justify-center bg-gradient-to-r from-red-700 to-orange-500 rounded-lg p-6 shadow-lg text-white transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl space-y-10">
             <h2 className="text-2xl font-bold">UseRef()</h2>
 
             <a className="text-cyan-300 hover:text-indigo-800 text-sm mt-5"

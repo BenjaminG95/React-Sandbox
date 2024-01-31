@@ -43,7 +43,7 @@ function MemoExample() {
     }
 
     return (<>
-        <div className="flex flex-col items-center justify-center bg-gradient-to-r from-orange-500 to-emerald-600 rounded-lg p-6 shadow-lg text-white transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl">
+        <div className="flex flex-col items-center justify-center bg-gradient-to-r from-orange-500 to-emerald-600 rounded-lg p-6 shadow-lg text-white transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl space-y-10">
             <h2 className="text-2xl font-bold">UseMemo()</h2>
             <input
                 type="text"

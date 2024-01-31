@@ -109,7 +109,7 @@ function UseStateExample() {
     }
 
     return (<>
-        <div className="flex flex-col items-center justify-center bg-gradient-to-r from-emerald-600 to-teal-600 rounded-lg p-6 shadow-lg text-white transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl">
+        <div className="flex flex-col items-center justify-center bg-gradient-to-r from-emerald-600 to-teal-600 rounded-lg p-6 shadow-lg text-white transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl space-y-10">
             <h2 className="text-2xl font-bold">UseState()</h2>
             {/* Changez le nom de la fonction appelée dans le onClick pour tester les différentes méthodes */}
 

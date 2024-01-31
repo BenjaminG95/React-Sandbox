@@ -57,7 +57,7 @@ function UseReducerExample() {
     const [state, dispatch] = useReducer(reducer, initialState);
 
     return (<>
-        <div className="flex flex-col items-center justify-center bg-gradient-to-r from-yellow-800 to-teal-500 rounded-lg p-6 shadow-lg text-white transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl">
+        <div className="flex flex-col items-center justify-center bg-gradient-to-r from-yellow-800 to-teal-500 rounded-lg p-6 shadow-lg text-white transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl space-y-10">
         <h2 className="text-2xl font-bold">UseReducer()</h2>
             {/* Lorsque l'utilisateur clique sur un bouton, dispatch est appelé avec une action correspondante. */}
             {/* Le réducteur est appelé et renvoie un nouvel état. */}
@@ -66,16 +66,16 @@ function UseReducerExample() {
                href="https://github.com/BenjaminG95/React-Sandbox/blob/main/src/components/examples/useReducer/useReducerExample.jsx"
                target="_blank" rel="noreferrer">Code source de UseReducerExample</a>
             <p className="text-sm">Compteur : {state.count}</p>
-            <div>
-                <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mr-5"
-                        onClick={() => dispatch({type: 'decrement'})}
-                >
-                    Décrémenter
-                </button>
-                <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mr-2 mt-4"
+            <div className="mt-4 flex flex-col space-y-2">
+                <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
                         onClick={() => dispatch({type: 'increment'})}
                 >
                     Incrémenter
+                </button>
+                <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+                        onClick={() => dispatch({type: 'decrement'})}
+                >
+                    Décrémenter
                 </button>
             </div>
             {/* Le composant UseReducerExample utilise un réducteur pour gérer l'état du compteur de manière plus structurée. */}

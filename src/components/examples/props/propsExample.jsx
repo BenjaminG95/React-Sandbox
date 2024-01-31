@@ -58,7 +58,7 @@ function MessageDisplay({message, updateMessage}) {
     // Afficher le message et le champ de saisie avec le bouton pour modifier le message
     return (<>
         <div
-            className="flex flex-col items-center justify-center bg-gradient-to-r from-emerald-600 to-indigo-600 rounded-lg p-6 shadow-lg text-white transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl">
+            className="flex flex-col items-center justify-center bg-gradient-to-r from-emerald-600 to-indigo-600 rounded-lg p-6 shadow-lg text-white transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl space-y-10">
             <h2 className="text-2xl font-bold">Les props</h2>
             <a className="text-cyan-300 hover:text-indigo-800 text-sm mt-4"
                href="https://github.com/BenjaminG95/React-Sandbox/blob/main/src/components/examples/props/propsExample.jsx"

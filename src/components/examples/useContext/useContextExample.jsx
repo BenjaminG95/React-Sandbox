@@ -61,9 +61,8 @@ function UseContextExample() {
     // ThemeContext.Provider peut être utilisé plusieurs fois pour créer des arbres de contexte indépendants
     return (
         <ThemeContext.Provider value={theme}>
-            <div className="flex flex-col items-center justify-center bg-gradient-to-r from-indigo-800 to-purple-500
-            rounded-lg p-6 shadow-lg text-white transition duration-300 ease-in-out
-             hover:-translate-y-1 hover:shadow-2xl">
+                <div className="flex flex-col items-center justify-center bg-gradient-to-r from-indigo-800 to-purple-500 rounded-lg p-6 shadow-lg text-white transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl space-y-10">
+
                 <h2 className="text-2xl font-bold">UseContext()</h2>
                 <a className="text-cyan-300 hover:text-indigo-800 text-sm my-2"
                    href="https://github.com/BenjaminG95/React-Sandbox/blob/main/src/components/examples/useContext/useContextExample.jsx"
