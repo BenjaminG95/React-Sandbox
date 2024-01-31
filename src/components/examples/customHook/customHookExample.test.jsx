@@ -1,6 +1,6 @@
-import React from "react";
+import React                         from "react";
 import { fireEvent, render, screen } from "@testing-library/react"; // Importe les fonctions de test
-import CustomHookExample from "./customHookExample"; // Importe le composant à tester
+import CustomHookExample             from "./customHookExample"; // Importe le composant à tester
 
 describe('CustomHookExample Component', () => {
     test('incrémenter et décrémenter le compteur', () => {
@@ -8,8 +8,8 @@ describe('CustomHookExample Component', () => {
         render(<CustomHookExample/>);
 
         // Trouver les boutons
-        const incrementButton = screen.getByRole('button', { name: 'Incrémenter' }); // Récupère le bouton "Incrémenter"
-        const decrementButton = screen.getByRole('button', { name: 'Décrémenter' }); // Récupère le bouton "Décrémenter"
+        const incrementButton = screen.getByRole('button', {name: 'Incrémenter'}); // Récupère le bouton "Incrémenter"
+        const decrementButton = screen.getByRole('button', {name: 'Décrémenter'}); // Récupère le bouton "Décrémenter"
 
         // Simuler des clics et vérifier la mise à jour de l'état
         fireEvent.click(incrementButton); // Simule le clic sur le bouton "Incrémenter"

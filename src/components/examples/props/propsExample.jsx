@@ -40,7 +40,7 @@
  *
  * Voir la documentation officielle : https://react.dev/learn/passing-props-to-a-component
  */
-import React, {useState} from "react";
+import React, { useState } from "react";
 
 // Composant enfant qui affiche le message et permet de le modifier
 function MessageDisplay({message, updateMessage}) {
@@ -56,30 +56,32 @@ function MessageDisplay({message, updateMessage}) {
     };
 
     // Afficher le message et le champ de saisie avec le bouton pour modifier le message
-    return (<>
-        <div
-            className="flex flex-col items-center justify-center bg-gradient-to-r from-emerald-600 to-indigo-600 rounded-lg p-6 shadow-lg text-white transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl space-y-10">
-            <h2 className="text-2xl font-bold">Les props</h2>
-            <a className="text-cyan-300 hover:text-indigo-800 text-sm mt-4"
-               href="https://github.com/BenjaminG95/React-Sandbox/blob/main/src/components/examples/props/propsExample.jsx"
-               target="_blank" rel="noreferrer">
-                Code source de propsExample
-            </a>
-            <p className="text-sm mt-4">
-                Remplissez l'input et appuyez sur le bouton pour modifier le texte.
-            </p>
-            <input type="text"
-                   className="text-sm mt-4 block w-full px-3 py-1.5 font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                   value={newMessage}
-                   onChange={handleInputChange}
-                   placeholder="Entrez une propriété"/>
-            <p className="text-sm mt-4">Message: {message}</p>
-            <button className="bg-cyan-400 hover:bg-cyan-600 text-white font-bold py-2 px-4 rounded mt-4"
-                    onClick={handleSubmit}>
-                Utiliser les props
-            </button>
-        </div>
-    </>);
+    return (
+        <>
+            <div
+                className="flex flex-col items-center justify-center bg-gradient-to-r from-emerald-600 to-indigo-600 rounded-lg p-6 shadow-lg text-white transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl space-y-10">
+                <h2 className="text-2xl font-bold">Les props</h2>
+                <a className="text-cyan-300 hover:text-indigo-800 text-sm mt-4"
+                   href="https://github.com/BenjaminG95/React-Sandbox/blob/main/src/components/examples/props/propsExample.jsx"
+                   target="_blank" rel="noreferrer">
+                    Code source de propsExample
+                </a>
+                <p className="text-sm mt-4">
+                    Remplissez l'input et appuyez sur le bouton pour modifier le texte.
+                </p>
+                <input type="text"
+                       className="text-sm mt-4 block w-full px-3 py-1.5 font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                       value={ newMessage }
+                       onChange={ handleInputChange }
+                       placeholder="Entrez une propriété"/>
+                <p className="text-sm mt-4">Message: { message }</p>
+                <button className="bg-cyan-400 hover:bg-cyan-600 text-white font-bold py-2 px-4 rounded mt-4"
+                        onClick={ handleSubmit }>
+                    Utiliser les props
+                </button>
+            </div>
+        </>
+    );
 }
 
 // Composant parent qui contient le message et la fonction de mise à jour du message
@@ -93,8 +95,8 @@ function PropsExample() {
 
     // Afficher le composant enfant avec le message et la fonction de mise à jour du message
     return (
-        <div className={'flex-column flex-item'}>
-            <MessageDisplay message={message} updateMessage={changeMessage}/>
+        <div className='flex-column flex-item'>
+            <MessageDisplay message={ message } updateMessage={ changeMessage }/>
         </div>
     );
 }

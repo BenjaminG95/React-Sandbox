@@ -34,7 +34,7 @@
  * Règles d'Utilisation : Comme pour tous les Hooks, useEffect doit être appelé au niveau supérieur d'un composant fonctionnel ou d'un autre Hook personnalisé, et non à l'intérieur de boucles, conditions ou fonctions imbriquées.
  */
 
-import React, {useState, useEffect} from "react";
+import React, { useEffect, useState } from "react";
 
 function EffectExample() {
     // utilisation de useState pour créer une variable d'état 'count' initialisée à 0
@@ -43,7 +43,7 @@ function EffectExample() {
 
     useEffect(() => {
         // À chaque modification de 'count', le titre du document (dans l'onglet du navigateur) est mis à jour.
-        document.title = `Vous avez cliqué ${count} fois`;
+        document.title = `Vous avez cliqué ${ count } fois`;
 
         // Ce code démontre l'un des nombreux usages possibles de useEffect.
         // Outre la mise à jour du titre du document, useEffect est idéal pour effectuer des effets de bord,
@@ -64,23 +64,26 @@ function EffectExample() {
         setCount(count + 1);
     }
 
-    return (<>
-            <div className="flex flex-col items-center justify-center bg-gradient-to-r from-teal-600 to-indigo-700 rounded-lg p-6 shadow-lg text-white transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl space-y-10">
-            <h2 className="text-2xl font-bold">UseEffect()</h2>
-            <a className="text-cyan-300 hover:text-indigo-800 text-sm mt-4"
-               href="https://github.com/BenjaminG95/React-Sandbox/blob/main/src/components/examples/useEffect/useEffectExample.jsx"
-               target="_blank" rel="noreferrer">Code source de UseEffectExample</a>
-            <p className="text-sm mt-4">
-                Chaque clique incrémente le compteur, puis change le nom de l'onglet.<br/>
-                Compteur actuel : {count}
-            </p>
-            <button className="bg-cyan-400 hover:bg-cyan-600 text-white font-bold py-2 px-4 rounded mt-4"
-                    onClick={incrementCount}
-            >
-                Utiliser useEffect()
-            </button>
-        </div>
-    </>);
+    return (
+        <>
+            <div
+                className="flex flex-col items-center justify-center bg-gradient-to-r from-teal-600 to-indigo-700 rounded-lg p-6 shadow-lg text-white transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl space-y-10">
+                <h2 className="text-2xl font-bold">UseEffect()</h2>
+                <a className="text-cyan-300 hover:text-indigo-800 text-sm mt-4"
+                   href="https://github.com/BenjaminG95/React-Sandbox/blob/main/src/components/examples/useEffect/useEffectExample.jsx"
+                   target="_blank" rel="noreferrer">Code source de UseEffectExample</a>
+                <p className="text-sm mt-4">
+                    Chaque clique incrémente le compteur, puis change le nom de l'onglet.<br/>
+                    Compteur actuel : { count }
+                </p>
+                <button className="bg-cyan-400 hover:bg-cyan-600 text-white font-bold py-2 px-4 rounded mt-4"
+                        onClick={ incrementCount }
+                >
+                    Utiliser useEffect()
+                </button>
+            </div>
+        </>
+    );
 }
 
 export default EffectExample;

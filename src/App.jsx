@@ -1,31 +1,31 @@
 import './App.css';
-import {Routes, Route, BrowserRouter} from 'react-router-dom'; // import du router pour la navigation
+import { Routes, Route, BrowserRouter } from 'react-router-dom'; // import du router pour la navigation
 
-import Header from "./layouts/header"; // import du composant header
-import Home from "./pages/home";
-import Footer from "./layouts/footer";
-import ReactRouterExample from "./pages/reactRouterExample";
+import Header                      from "./layouts/header"; // import du composant header
+import Home                        from "./pages/home";
+import Footer                      from "./layouts/footer";
+import ReactRouterExample          from "./pages/reactRouterExample";
 import ReactRouterWithParamExample from "./pages/reactRouterWithParamExample";
-import ReactResources from "./pages/reactResources"; // import du composant main
+import ReactResources              from "./pages/reactResources"; // import du composant main
 
 // fonction principale de l'application
 function App() {
     return (
         // Utilisation du composant Router de React Router
-        <BrowserRouter basename={'/React-Sandbox'}>
-            {/* Wrapper div avec la classe 'App' pour appliquer des styles globaux */}
-            <div className={'App bg-gray-100'}>
-                {/* Le Header est inclus en haut de toutes les pages */}
+        <BrowserRouter basename={ '/React-Sandbox' }>
+            {/* Wrapper div avec la classe 'App' pour appliquer des styles globaux */ }
+            <div className='App bg-gray-100'>
+                {/* Le Header est inclus en haut de toutes les pages */ }
                 <Header/>
-                {/* Configuration des Routes de l'application */}
+                {/* Configuration des Routes de l'application */ }
                 <Routes>
-                    {/*route de la page d'accueil, Lorsque l'URL correspond à '/', le composant Home est rendu */}
-                    <Route path="/" element={<Home/>}/>
+                    {/*route de la page d'accueil, Lorsque l'URL correspond à '/', le composant Home est rendu */ }
+                    <Route path="/" element={ <Home/> }/>
                     {/* Route pour la page de démonstration de React Router, Lorsque l'URL correspond à
-                    '/routerExample', le composant RouterExample est rendu */}
-                    <Route path="/router-example" element={<ReactRouterExample/>}/>
-                    <Route path="/router-example/:param" element={<ReactRouterWithParamExample/>}/>
-                    <Route path="/react-resources" element={<ReactResources/>}/>
+                    '/routerExample', le composant RouterExample est rendu */ }
+                    <Route path="/router-example" element={ <ReactRouterExample/> }/>
+                    <Route path="/router-example/:param" element={ <ReactRouterWithParamExample/> }/>
+                    <Route path="/react-resources" element={ <ReactResources/> }/>
                 </Routes>
                 <Footer/>
             </div>

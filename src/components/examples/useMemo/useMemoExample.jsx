@@ -26,7 +26,7 @@
  * Abuser de useMemo peut entraîner une surconsommation de mémoire et des performances réduites dans certains cas.
  */
 
-import React, { useState, useMemo } from 'react';
+import React, { useMemo, useState } from 'react';
 
 function MemoExample() {
     // utilisation de useState pour créer une variable d'état 'input' initialisée à une chaîne vide
@@ -42,24 +42,27 @@ function MemoExample() {
         setInput(e.target.value);
     }
 
-    return (<>
-        <div className="flex flex-col items-center justify-center bg-gradient-to-r from-orange-500 to-emerald-600 rounded-lg p-6 shadow-lg text-white transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl space-y-10">
-            <h2 className="text-2xl font-bold">UseMemo()</h2>
-            <input
-                type="text"
-                value={input}
-                onChange={handleInputChange}
-                className="bg-white text-gray-800 font-normal py-2 px-4 rounded mt-4 w-full"
-                placeholder="Écrivez un message"
-            />
-            <a className="text-cyan-300 hover:text-indigo-800 text-sm mt-4"
-               href="https://github.com/BenjaminG95/React-Sandbox/blob/main/src/components/examples/useMemo/useMemoExample.jsx"
-               target="_blank" rel="noreferrer">Code source de useMemoExample</a>
-            <p className="text-sm mt-4">
-                Longueur de la chaîne mémorisée : {memoizedValue}
-            </p>
-        </div>
-        </>);
+    return (
+        <>
+            <div
+                className="flex flex-col items-center justify-center bg-gradient-to-r from-orange-500 to-emerald-600 rounded-lg p-6 shadow-lg text-white transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl space-y-10">
+                <h2 className="text-2xl font-bold">UseMemo()</h2>
+                <input
+                    type="text"
+                    value={ input }
+                    onChange={ handleInputChange }
+                    className="bg-white text-gray-800 font-normal py-2 px-4 rounded mt-4 w-full"
+                    placeholder="Écrivez un message"
+                />
+                <a className="text-cyan-300 hover:text-indigo-800 text-sm mt-4"
+                   href="https://github.com/BenjaminG95/React-Sandbox/blob/main/src/components/examples/useMemo/useMemoExample.jsx"
+                   target="_blank" rel="noreferrer">Code source de useMemoExample</a>
+                <p className="text-sm mt-4">
+                    Longueur de la chaîne mémorisée : { memoizedValue }
+                </p>
+            </div>
+        </>
+    );
 }
 
 export default MemoExample;
