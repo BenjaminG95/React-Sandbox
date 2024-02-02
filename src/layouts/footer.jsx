@@ -9,7 +9,7 @@ function Footer() {
                     <a href="https://github.com/BenjaminG95/React-Sandbox"
                        target="_blank"
                        rel="noreferrer"
-                       className="hover:text-gray-400">GitHub</a>
+                       className="text-cyan-300 hover:text-indigo-800">GitHub</a>
                 </div>
             </div>
         </footer>
