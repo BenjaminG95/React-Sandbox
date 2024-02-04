@@ -19,7 +19,7 @@ Dans votre terminal, placé à l'endroit où vous stockez vos projets ( souvent 
 `git clone git@github.com:BenjaminG95/React-Sandbox.git`
 
 ### Installez les dépendances :
-Dans votre terminal, placé dans le projet, tapez la commande : `npm i`
+Dans votre terminal, placé dans le projet, tapez la commande : `npm install`
 
 ### Démarrez l'application :
 Dans votre terminal, placé dans le projet, tapez la commande : `npm run dev`
